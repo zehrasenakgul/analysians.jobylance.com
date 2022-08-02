@@ -1,0 +1,313 @@
+.SupportContainer{
+    display:flex;
+    justify-content: space-around;
+    width: 85%;
+    color: white;
+    width : 100%;
+    height: auto;
+    padding: 0 1em 1em 1em
+}
+.NewRequestContainer{
+    width: 37.5em;
+    max-height: 790px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: 
+    linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+    linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.NewRequestContainer h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 22.4518px;
+line-height: 34px;
+letter-spacing: 0.01em;
+color: #DCDCDC;
+}
+.DividingLine{
+    width: 300px;
+    height: 1px;
+    background: #EBEFF2;
+}
+#BaslikInput{
+    width: 80%;
+}
+#DepartmanInput,#KanalInput{
+    width: 35%;
+}
+#AciklamaInput{
+    width: 80%;
+    max-height: 380px;
+}
+.RequestInputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.RequestInputs input,.RequestInputs textarea,.RequestInputs select{   
+    padding: 0.7em;
+    border: none;
+    color: rgba(255, 254, 254, 0.57);
+    background: #2e2e2e;
+    border-radius: 9.43px;
+}
+select{
+    color:#7D29A0;
+}
+option{
+    background-color: white;
+    color: #2e2e2e;
+}
+#KaydetButonu{
+    border: none;
+    width: 250px;
+    padding: 2em;
+    background: #7D29A0;
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.2152px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+
+.Appointment_Calendar{
+    position: relative;
+    width: 42.8em;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: 
+    linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+    linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.UpperContainer{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.Dates{
+    padding: 1em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* Ay için
+        gap :3em;flex-wrap:wrap;padding:2em;
+    */
+}
+.Date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em;
+}
+.ActiveDateDay{
+    color: #7D29A0;
+}
+.ActiveDateNumber{
+    background-color: #7D29A0;
+    padding:0.03em 0.5em 0.1em 0.5em;
+    border-radius: 100%;
+}
+.ActiveDateMonth{
+    color: white;
+    background-color: #7D29A0;
+}
+.DatesSelect{
+    width: 50%;
+    margin: 0 auto 1em;
+    background-color: transparent;
+    box-shadow: 1px 1px 15px 1px #7D29A0;
+    border: none;
+}
+.DatesSelect{
+    color: #972dc5;
+}
+#FilterOptions{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.SeperatingLine{
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+}
+.Appointments{
+    max-height: 570px;
+    margin-top: 40px;
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 2em;
+}
+.Appointment{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    width: 80%;
+    background: #323232;
+    box-shadow: 0px 20.50183px 20.5092px rgba(0, 0, 0, 0.08);
+    border-radius: 5.00366px;
+}
+.AppointmentInfo-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.Appointment_Name_and_Type{
+    display: flex;
+}
+.Appointment_Actions{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#NotifyButton{
+color: white;
+padding: 0.5em;
+width: 150px;
+    border: none;
+    background: #109CF1;
+border-radius: 5.00366px;
+}
+#EmailButton{
+    width: 150px;
+    color: white;
+    padding: 0.5em;
+    background: #2ED47A;
+    border-radius: 5.00366px;
+    border: none;
+}
+.DahaFazla-Button{
+    position: absolute;
+    bottom: 1em;
+    left: 48%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width :1400px) {
+    .SupportContainer{
+        font-size: 13px;
+        margin-left: 2em;
+        gap: 1em;
+    }
+}
+@media screen and (max-width : 1350px) {
+    .PageContent-Container{
+        padding: 0;
+    }
+    .SupportContainer{
+        margin-left: 0;
+    }
+    .SupportContainer{
+        display: flex;
+        gap: 2em;
+        font-size: 16px;
+        margin-left: 0;
+        padding-left: 1em;
+        flex-direction: column;
+    }
+    .Appointment_Calendar{
+        width: 100%;
+        min-height: 500px;
+        padding-bottom: 5em;
+    }
+    .NewRequestContainer{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .PageContent-Container{
+       padding: 0.5em;
+    }
+    .SupportContainer{
+        margin-top: 1em;
+        gap: 2em;
+        padding: 0;
+    }
+    .Dates{
+        gap: 1em;
+    }
+    .DateDay,.DateNumber{
+        font-size: 14px;
+    }
+    .NewRequestContainer{
+        padding: 2em 0 2em 0;
+    }
+    .RequestInputs{
+        width: 100%;
+    }
+    .DividingLine{
+        width: 320px;
+    }
+    #KaydetButonu{
+        padding: 1em;
+    }
+    .Appointment_Calendar{
+        min-height: 800px;
+    }
+    .Appointment{
+        text-align: center;
+        gap: 1em;
+        flex-direction: column;
+    }
+    .Appointment_Name_and_Type{
+        justify-content: center;
+    }
+    .Appointments{
+        padding-bottom: 1em;
+    }
+    #NotifyButton,#EmailButton{
+        width: 100%;
+    }
+    .DahaFazla-Button{
+        left: 42%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}

@@ -1,0 +1,1037 @@
+
+/*Genel Sayfayı İlgilendiren Ayar */
+.PageContent-Container{
+    gap: 1em;
+}
+
+/*GRUPLAR KISMINA AIT CSS*/
+.GroupsChatPage-Container{
+    display: flex;
+    width:80%;
+    height: 47em;
+    background: #232323;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+}
+.Groups-Container{
+    padding: 1em;
+    width: 10%;
+    display: flex;
+    border-right: 5px solid rgba(0,0,0,0.4);
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.Groups-Header img,.CurrentChat_Group_ProfilePicture,.Group_ProfilePicture{
+    width: 4em;
+}
+.Groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none !important;
+    padding-right: 0.2em;
+}
+.Group{
+    width: auto;
+    position: relative;
+}
+.Group_Name{
+    width: 100%;
+    max-width: 90px;
+    font-size: 12px;
+    overflow-wrap: break-word;
+}
+.Group button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.Group_UnreadMessages-Container{
+    right: -0.1em;
+    top: -0.1em;
+    position: absolute;
+    width: max-content;
+    padding: 0.1em 0.6em 0.2em 0.6em;
+    border-radius: 100%;
+    font-size: 1em;
+    background-color: #7D29A0;
+    border: solid 1.5px black;
+}
+.Group_UnreadMessages_Count{
+    font-size: 1em;
+}
+@media screen and (max-height:900pxs) {
+    .Group_UnreadMessages-Container{
+        bottom: 0 !important;
+        top: 0 !important;
+    }
+}
+
+.Go2Groups{
+    display: none;
+    z-index: 9999;
+}
+.ChatBox{
+    width: 90%;
+    height: 47em;
+}
+.Chatbox-Header{
+    padding: 0.5em;
+    width: 100%;    
+    height: 12%;
+    display: flex;
+    border-bottom: 5px solid rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: space-between;
+}
+.ChatInfo-Container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.ChatInfo-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ChatInfo-txt h3{
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+.ChatInfo-txt span{
+    font-size: 1em;
+}
+#GroupSettings_Btn{
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+.Chat{
+    width: 100%;
+    height: 80%;
+    background-color: #1B1B1B;
+}
+.Chatbox_Inputs{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+.MessageInput-Container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+#messageInput{
+    width: 99%;
+    height: 2.5em;
+    resize:none;
+    background: #1B1B1B;
+    border-radius: 20px;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    border: none;
+    color: white;
+    max-height: 3em;
+}
+.MediaInputs{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    padding-top: 0.4em;
+    justify-content: center;
+}
+#MediaInput{
+    color: #7D29A0;
+    font-size: 24px;
+}
+.MediaInputs button i{
+
+}
+.SendMessage{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding-left: 1em;
+}
+#SendMessage{
+    font-size: 24px;
+    color: #7D29A0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.GroupSettings_Container{
+    --setting_cont_width : 30%;
+    border-left: 5px solid rgba(0,0,0,0.4);
+    position: absolute;
+    right: 0.2em;
+    background-color: #232323;
+    height: 100%;
+    overflow: hidden;
+    animation: settingsmenuClose 0.4s;
+    animation-fill-mode: forwards;
+    border-radius: 10px 40px 40px 10px;
+}
+.GroupSettings_Container_Active{
+    display: block;
+    animation: settingsmenuOpen 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes settingsmenuOpen {
+    0%{
+        width: 0;
+        height: 1px;
+        filter: brightness(50%);
+        visibility: hidden;
+    }
+    100%{
+        width: var(--setting_cont_width);
+        height: 100%;
+        filter: brightness(100%);
+        visibility: visible;
+    }
+}
+@keyframes settingsmenuClose {
+    0%{
+        display: block;
+        width: var(--setting_cont_width);
+        height: 100%;
+        filter: brightness(100%);
+        visibility: visible;
+    }
+    100%{
+        width: 0;
+        height: 1px;
+        filter: brightness(50%);
+        display: none;
+        visibility: hidden;
+    }
+}
+.GroupInfo_Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.2em 0 0.2em;
+}
+.GroupInfo-Header{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#GroupInfo_EditProfile{
+    position: absolute;
+    left: 2em;
+    top: 0.58em;   
+}
+
+
+.editScreenOn{
+    display: flex !important;
+}
+#closeEditScreen{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    top: 0;
+    font-size: 24px;
+    color: white;
+}
+.EditGroup-Header{
+    width: 100%;
+    text-align:center;
+    position: relative;
+}
+.EditGroup_Container{
+    padding: 2em;
+    background-color: #232323;
+    border-radius: 40px 0 0 40px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    z-index: 9999;
+    align-items: center;
+}
+#editGroupPhoto_btn{
+    background-color: #7D29A0;
+    padding: 1em;
+    border-radius:12px;
+}
+.EditGroupForm{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.EditGrouForm_Inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#editGroupDescription{
+    background: #1B1B1B;
+    border: none;
+    height: auto;
+    outline: none;
+    color: white;
+    padding: 1em;
+    resize: none;
+}
+#editGroupPhoto_div{
+    display: flex;flex-direction: column-reverse;width: 100%;
+    align-items: center;
+}
+#editGroupPhoto_div img{
+    width: 120px;
+    height: 120px;
+}
+#EditProfilePictures{
+    width: 10px;
+}
+#newGroupPhoto{
+    border-radius: 100%;
+}
+#saveEditsBtn{
+    background-color: #7D29A0;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+
+.GroupTitle_Cont{
+    position: relative;
+}
+.GroupTitle_Cont button{
+    position: absolute;
+    right: -1.5em;
+    top: 0;
+}
+.Group_pp_Frame{
+    --group_pp_frame_wxh : 120px;
+    width: var(--group_pp_frame_wxh);
+    height: var(--group_pp_frame_wxh);
+    background-color: #1B1B1B;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Group_pp_Frame label{
+    margin-bottom: 0 !important;
+}
+.GroupProfilePicture{
+    width: calc(var(--group_pp_frame_wxh) - 15px);  
+    border-radius: 100%;
+    height: calc(var(--group_pp_frame_wxh) - 15px);
+}
+.UpperSide{
+    padding: 1em;
+}
+.GroupInfo_Description_Section{
+    padding: 1em;
+    border-bottom: 5px solid rgba(0,0,0,0.3);
+    border-top: 5px solid rgba(0,0,0,0.3);
+    width: 100%;
+    margin-top: 15px;
+}
+/* Ayarlar kısmında üyeler ve medyaları gösteren css*/
+.twoTabContainer{
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.twoTabContainer_Tabs{
+    display:flex;
+    justify-content: center;
+}
+.Tab{
+    border-radius: 20px 20px 0 0;
+    background-color:rgba(126, 127, 131,0.1);
+    border: rgba(0,0,0,0.3) 1px solid;
+    border-bottom: 0;
+    padding: 0.5em 2em 0.5em 2em;
+}
+.activeTab span{
+    color: #7D29A0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.memberstab_open{
+    display: flex !important;
+}
+.MembersTab{
+    display: none;
+    align-items:flex-start;
+    flex-direction: column;
+    width: 100%;
+    border: rgba(0,0,0,0.3) 1px solid;
+    border-top: 0;
+    border-radius: 0 20px 20px 20px;
+    height: 12em;
+    background-color:rgba(126, 127, 131,0.1);
+    overflow-y: scroll;
+}
+.Member{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.Member_Title{
+    font-size: 10px;
+}
+.MembersTab{
+    scrollbar-color: rgba(126, 127, 131,0.5) rgba(126, 127, 131,0.1) !important;
+    scrollbar-width: normal !important;
+}
+.mediatab_open{
+    display: flex !important;
+}
+.MediaTab{
+    width: 100%;
+    border: rgba(0,0,0,0.3) 1px solid;
+    border-top: 0;
+    border-radius: 0 20px 20px 20px;
+    height: 13em;
+    background-color:rgba(126, 127, 131,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: auto;
+}
+.MediaTab_imgs{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.MediaTab_imgs img{
+    max-width: 33%;
+    max-height: 120px;
+    min-width: 30%;
+    min-height: 120px;
+}
+#MoreMedia{
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.1em 0 0.1em 0;
+    background: rgba(125, 41, 160, 0.5);
+    border-radius: 6.99583px;
+}
+.LastButtons{
+    width: 100%;
+    padding: 0.5em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.LastButtons button:nth-child(1){
+    padding: 0.3em;
+    width: 100%;
+    background-color: rgb(197, 41, 41);
+    border-radius: 6.99583px;
+}
+.member_options{
+    color: white;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn:hover{
+    color: white;
+}
+.headerimg_Mobile{
+    display: none;
+}
+
+/* Grup Edit Screen Responsive*/
+@media screen and (max-height : 700px) {
+    #editGroupPhoto_div img{
+        width: 80px;height: 80px;
+    }
+    .EditGroupForm{
+        gap: 1em;
+    }
+}
+@media screen and (max-width : 850px) and (max-height : 700px) {
+    .EditGroup_Container{
+        width: 100% !important;
+        border-radius: 40px;
+    }
+    #EditGroupName{
+        width: 100%;
+    }
+}
+
+
+
+/*Grup Bilgileri*** Ayarları Responsive*/
+@media screen and (max-width : 1400px) {
+    @keyframes settingsmenuOpen {
+        0%{
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            visibility: hidden;
+        }
+        100%{
+            width: 50%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+        }
+    }
+    @keyframes settingsmenuClose {
+        0%{
+            display: block;
+            width: 50%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+        }
+        100%{
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            display: none;
+            visibility: hidden;
+        }
+    }
+    .EditGroup_Container{
+        width: 50%;
+    }
+}
+ 
+@media screen and (max-height : 700px) {
+    .GroupInfo-Header{
+        margin-top: 5px;
+    }
+    .MembersTab {
+        height: 8em !important;
+      }
+}
+@media screen and (max-width : 1152px) and (max-height : 700px){
+    .GroupInfo-Header{
+        margin-top: 0;
+    }
+    .Group_pp_Frame{
+        --group_pp_frame_wxh : 110px;
+    }
+}
+@media screen and (max-width : 850px) {
+    .MembersTab{
+         height: 22em;   
+    }
+    .MediaTab{
+        height: 22em;
+    }
+    .EditGroup_Container{
+        width: 100%;
+        border-radius: 40px;
+    }
+    #EditGroupName{
+        width: 100%;
+    }
+}
+@media screen and (max-width :520px) {
+    .MediaTab {
+        height: 15em;
+    }
+    .MembersTab{
+        height: 15em;
+    }
+}
+@media screen and (max-width : 400px) {
+    .MembersTab{
+         height: 15em;   
+    }
+    .EditGroup_Container{
+        width: 100%;
+        border-radius: 40px;
+    }
+    #EditGroupName{
+        width: 100%;
+    }
+    .EditGroup-Header h1{font-size: 2rem;margin-bottom: 0;}
+    .MediaTab{
+        height: 15em;
+    }
+}
+@media screen and (max-width : 320px) {
+    .MembersTab{
+         height: 13em;   
+    }
+    .EditGroup-Header h1{font-size: 1.2rem;margin-bottom: 0;}
+    .MediaTab{
+        height: 13em;
+    }
+    .LastButtons button{
+        width: 80% !important;
+    }
+}
+
+
+
+
+
+/*Genel Yapının Responsive*/
+@media screen and (max-width :1400px) {
+    .MessageInput-Container{
+        width: 87%;
+    }
+}
+@media screen and (max-width : 1180px) {
+    .Group{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 850px) {
+    .PageContent-Container{
+        padding: 0.5em;
+    }
+    .GroupsChatPage-Container{
+        width: 100%;
+        height: 55em;
+    }
+    .Groups{
+        scrollbar-width: normal !important;
+    }
+    @keyframes settingsmenuOpen {
+        0%{
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            visibility: hidden;
+        }
+        100%{
+            width: 100%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+            border-radius: 40px;
+        }
+    }
+    @keyframes settingsmenuClose {
+        0%{
+            display: block;
+            width: 100%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+        }
+        100%{
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            display: none;
+            visibility: hidden;
+            border-radius: none;
+        }
+    }
+    .ChatBox{
+        height: 100%;
+    }
+    #GroupsHeaderimg{
+        width: 3.5em;
+    }
+}
+@media screen and (max-width : 670px) {
+    .Go2Groups{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: unset !important;
+        left: 1.5em;
+        -webkit-transform: translate(0,1em) !important;
+        background-color: purple !important;
+        z-index: 99;
+    }
+    .Groups-Container{
+        display: none;
+    }
+    .ChatBox{
+        width: 100%;
+    }
+    .Chatbox_Inputs{
+        padding-left: 1em;
+        gap: 0.5em;
+    }
+
+}
+@media screen and (min-width :670px) {
+    .Go2Groups{
+        display: none !important;
+    }
+}
+@media screen and (max-width : 660px) and (max-height : 900px) {
+    .Go2Groups{
+        top: unset !important;
+        -webkit-transform: translate(0,0.7em);
+        background-color: red;
+    }
+}
+@media screen and (max-width : 500px) and (max-height : 900px) {
+    .headerimg_Mobile{
+        position: absolute;
+        right: 0;
+        top: 1em !important;
+        width: 180px !important;
+        display: block;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width : 670px) {
+    .ChatInfo-Container{
+        justify-content: center;
+    }
+}
+@media screen and (max-width :680px){
+    .ChatInfo-Container{
+        justify-content: center;
+    }
+    .GroupSettings_Container{
+        border-radius: 40px 40px 40px 40px;
+        gap: 4em;
+    }
+    .Groups-Container{
+        border: none;
+        padding-top: 5em;
+        animation: grupmenuClose 0.4s forwards;
+    }
+    .Groups-Container_Active{
+        border: none;
+        display: block !important;
+        animation: grupmenuOpen 0.4s;
+        animation-fill-mode: forwards;
+    }
+    .Group button div{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #GroupsHeaderimg{
+        display: none;
+    }
+    .headerimg_Mobile{
+        position: absolute;
+        right: 2em;
+        top: 1.6em;
+        width: 180px !important;
+        display: block;
+    }
+    .Groups{
+        display: flex;
+        padding:1em;
+        padding-top: 3em;
+        align-items: flex-start;
+        max-height: 750px;
+    }
+    .Group{
+        width: 100%;
+        padding: 0.6em;
+        border: 20px solid rgba(32, 29, 29, 0.25);
+        box-shadow: #1B1B1B 1px 5px 3px 2px;
+        background: #1B1B1B;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    .Group button div{
+        width: 100%;
+        gap: 2em;
+        font-size: 16px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Group button{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .Group_UnreadMessages-Container{
+        width: max-content !important;
+    }
+    .Group_Name{
+        font-size: 16px;
+        max-width: 150px;
+    }
+    @keyframes grupmenuOpen {
+        0%{
+            display: none;
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            visibility: hidden;
+        }
+        100%{
+            display: block !important;
+            width: 100%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+        }
+    }
+    @keyframes grupmenuClose {
+        0%{
+            display: block !important;
+            width: 100%;
+            height: 100%;
+            filter: brightness(100%);
+            visibility: visible;
+        }
+        100%{
+            width: 0;
+            height: 1px;
+            filter: brightness(50%);
+            visibility: hidden;
+        }
+    }
+    .MessageInput-Container{
+        width: 80%;
+    }
+    .Chatbox_Inputs{
+        padding-left: 1.5em;
+    }
+}
+@media screen and (max-width : 500px) {
+    .MessageInput-Container{
+        width: 75%;
+    }
+    .Groups{
+        height: 100%;
+        padding-bottom: 1em;
+    }
+}
+@media screen and (max-width : 321px) {
+    .SendMessage{
+        padding-left: 0;
+}
+}
+
+/*Chat*/
+.Chat{
+    padding: 1em;
+    overflow-y: scroll;
+    scrollbar-width: none !important;
+    scroll-behavior: smooth;
+}
+.Chat_Message-Container{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    direction: ltr;
+    gap: 0.3em;
+}
+.Chat_Message_ProfilePicture-Container{
+    height: 100%;
+}
+.Chat_Message_ProfilePicture{
+    width: 3em;
+}
+
+.Chat_Message_Content-Container{
+    background: #232323;
+    box-shadow: 1px 1px 10px 1px #7D29A0;
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 20px 20px 20px 0;
+}
+.Chat_Message-Content{
+    display: flex;
+    padding: 1.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1em;
+}
+.Chat_Message_Img{
+    max-width: 800px;
+    min-width: 500px;
+    height: 100%;
+    max-height: 700px;
+}
+.Chat_Message_Text-Container{
+    width: 100%;
+}
+.Chat_Message_Text{
+    line-height: 27px;
+    transform: 
+}
+@media screen and (max-height :700px){
+    .GroupsChatPage-Container{
+        margin-top : -1.5em;
+        height : 42.5em;
+    }
+    .ChatBox{
+        height: 100%;
+    }
+    #SendMessage{
+        font-size: 20px;
+    }
+    .MembersTab{
+        height: 13em;   
+   }
+   .MediaTab{
+       height: 100%;
+   }
+   .GroupInfo_Description_Section{
+    margin-top: 0;
+   }
+   .GroupInfo_Description_Section h6{
+    font-size: 1em;
+   }
+   .MediaTab_imgs img{
+     max-width: unset;
+     min-width: unset;
+    max-height: unset;
+    min-height: unset;
+    width: 30% !important;
+    height: 90px !important;
+    }
+    .Group_pp_Frame{
+        --group_pp_frame_wxh: 80px !important;
+    }
+    .EditGroup_Container{
+        width: 50%;
+    }
+}
+@media screen and (max-width :1260px) {
+    .Chat_Message_Img{
+        max-width: 650px;
+    }
+}
+@media screen and (max-width :1060px) {
+    .Chat_Message_Img{
+        max-width: 550px;
+        min-width: 100px;
+    }
+    .EditGroup-Header h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width :920px) {
+    .Chat_Message_Img{
+        max-width: 450px;
+    }
+}
+@media screen and (max-width :850px) {
+    .EditGroup-Header h1{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width : 850px) and (max-height : 1090px) {
+    .MediaTab_imgs img{
+        height: 180px;
+        max-height: unset;
+    }
+    .MediaTab{
+        height: 100%;
+    }
+}
+@media screen and (max-width :700px) {
+    .Chat_Message_Img{  
+        max-width: 270px;
+    }
+}
+@media screen and (max-width : 599px) {
+    .stngs_menu{
+        transform: translate3d(-149px, 32px, 0px) !important;left: 0px !important;padding-bottom: 0.3em;
+    }
+}
+@media screen and (max-width :450px) {
+    .Chat_Message_Img{  
+        max-width: 253px;
+        max-height: 150px !important;
+        width: 250px;
+        height: 150px !important;
+    }
+    .MediaTab_imgs img{
+        height: 100px !important;
+        max-height: 120px !important;
+    }
+    .WebpageContent{
+        padding-bottom: 90px !important;
+    }
+    #messageSettings-Container{
+        right: -0.2em !important;
+    }
+}
+@media screen and (max-width :370px) {
+    #messageSettings-Container{
+        right: -0.4em !important;
+    }
+    .Chat_Message_Img{  
+        max-width: 243px;
+        max-height: 100px;
+        width: 190px;
+        height: 100px;
+    }
+
+    #newGroupPhoto{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .EditGroup-Header h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width :320px) {
+    .EditGroup-Header h1{
+        font-size: 20px;
+    }
+}
+/* Scrollbar Görünüm */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+.Chat_Message_Content-Container{
+    position: relative;
+}
+#messageSettings-Container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+#messageSettings{
+    color: white;
+}
+#messageSettings:hover{
+    color: white;
+}
+#messageSettings-Container{
+    z-index: unset;
+}

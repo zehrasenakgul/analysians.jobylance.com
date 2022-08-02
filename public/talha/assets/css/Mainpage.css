@@ -1,0 +1,518 @@
+body{
+    background: linear-gradient(108.17deg, #1D123D 0%, #121111 99.58%);
+}
+#formUpdateCreate i{
+    color : #7D29A0;
+}
+#btnCreateUpdate{
+    background: #7D29A0;
+    padding:0.5em 2.5em 0.5em 2.5em;
+    border-radius : 12px !important;
+}
+#the-count #maximum{
+    color:white;
+    opacity:0.5;
+}
+.btn-block-Container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.btn-block{
+    width:60% !important;
+}
+
+/* CONTENT */
+.PageContent-Container{
+    margin-top:0;
+    width: 100%;
+    position: relative;
+    height:auto;
+    display: flex;
+}
+.MainpagePost-Container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+textarea{
+    background : transparent !important;
+}
+.MainpagePosts-Header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    width: 53.5625em;
+    height: 5em;
+}
+.MainpagePosts-Header h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875em;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.Posts{
+    max-width : 50em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card{
+        border: 1px solid transparent !important;
+    border-radius: 9.30769px !important;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%) !important;
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+}
+
+.Post{
+    display: flex;
+    max-width: 53.125em;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    padding: 2em;
+    border: 1px solid transparent;
+    border-radius: 9.30769px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.PostOwnerInfo{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.PostOwner_Username,.PostedAgo{
+    width: 100%;
+}
+.PostOwner_Username{
+    font-size: 1.25em;
+}
+.PostedAgo{
+    font-size: 1em;
+}
+.PostOwnerText{
+    display: flex;
+    flex-direction: column;
+}
+.PostOwner_ProfilePicture{
+    width: 5em;height: 5em;
+}
+
+
+#PostSettings{
+    color: #788292 !important;
+    outline: none;
+    font-size: 36px !important;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+#PostSettings-Container{
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: -1.2em;
+}
+
+
+
+.PostContent_Text{
+    color: white;
+    padding-left: 2em;
+}
+.PostContent_Image{
+    max-width: 42.75em;
+    max-height: 16.5em;
+}
+.PostInteractions{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.PostInteractions >*{
+    width: 35px;
+    height: 24px;
+}
+.PostInteractionIcons_Container{
+    position: relative;
+}
+.PostContent_ImageContainer{
+    display: flex;
+    justify-content: center;
+}
+.PostInteractionIcons_Container span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6em;
+    line-height: 12px;
+    color: #788292;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+.Post_LikeCount{
+    right: 0;
+}
+.Post_CommentCount,.Post_ShareCount{
+    right: -1em;
+}
+.PostInteractions button{
+    padding: 0.1em;
+    background-color: transparent;
+    border: none;
+}
+.InactiveLikeIcon{
+    padding-bottom: 1.4px;
+}
+.RightSide_Contents-Container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    right: 0;
+    gap: 5em;
+}
+.LiveStream_AdBox{
+    width: 78%;
+    height:14em;
+    color: white;
+    position: relative;
+}
+.LiveStreamView{
+    position: absolute;
+    width: 23.25em;
+    height: 14.9375em;
+    z-index: 1;
+}
+.LiveStream_Title{
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+    padding: 0.5em;
+    font-size: 20px;
+}
+.LiveStream_Interactions_Info{
+    position: absolute;
+    z-index:2;
+    display: flex;
+    gap: 2em;
+    bottom: 0;
+    left: 1em;
+}
+.LiveBadge{
+    position: absolute;
+    right: 1.5em;
+    top: 1.5em;
+    width: 4em;
+    letter-spacing: 0.1em;
+    height: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background: #FF0E83;
+    border-radius: 35.2703px;;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+.SuggestedUsers-Container{
+    max-width: 28.125em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SuggestedUsers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap : 1em;
+}
+.SuggestedUsers-Container h1{
+    color: white;
+    font-size: 24px;
+}
+.SuggestedUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 12.5em;
+    height: 13.75em;
+    background: rgba(27, 27, 27, 1);
+    color: white;
+    border-radius: 13.6125px;
+}
+.SuggestedUser_UsernameContainer{
+    width: 100%;justify-content: center;gap: 0.5em;padding-bottom: 0.5em;display: flex;
+}
+.SuggestedUser_ProfilePicture{
+    width: 5em;height: 5em;margin-top: 1.5em;
+}
+.GozatButton{
+    width: 100px;
+    background: #F0F7FF;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #7D29A0; 
+    padding: 1em;
+}
+@media screen and (max-height : 900px) {
+    .MainpagePost-Container{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1470px) {
+    body{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 1100px) {
+    body{
+        font-size: 14px;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-240px, 68px, 0px) !important;
+    }
+}
+@media screen and (max-width : 850px){
+    .MainpagePost-Container{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width : 660px){
+    .MainpagePost-Container{
+        font-size: 13px !important;
+    }
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-280px, 68px, 0px) !important;
+        padding-bottom: 0.5em !important;
+    }
+
+}
+@media screen and (max-width : 600px) {
+    body{
+        font-size: 16px;
+    }
+    .Posts,.Post,.PostContent_Image{
+        width: 100%;
+    }
+    .MainpagePosts-Header{
+        width: 100%;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+        font-size: 16px;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+    .PageContent-Container{
+        flex-direction: column;
+        padding: 0.5em;
+    }
+}
+@media screen and (max-width :320px) {
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-240px, 68px, 0px) !important;
+    }
+}
+.BrandLogoWeb{
+    margin-left: 18em;  
+}
+@media screen and (max-width :580px) {
+    .MobileBrandLogo{
+        bottom: 0.85em;
+    }   
+}
+@media screen and (max-width : 1450px) {
+    .BrandLogoWeb img{
+        width: 250px;
+    }
+}
+@media screen and (max-width :1250px) {
+    .BrandLogoWeb{
+        margin-left: 8em;
+    }
+}
+
+
+/* POST INPUT */
+.CreatePost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+    position: relative;
+}
+#PostContentTextInput{
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.CharacterInput_Counter{
+    position: absolute;
+    right: 3em;
+    opacity: 0.5;
+    bottom: -1.5em;
+}
+@media screen and (max-width : 850px) {
+    .CharacterInput_Counter{
+        bottom: -3em;
+    }
+}
+
+.CreatePost_BottomContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.Alternative_Inputs{
+    width: 150px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items:center;
+}
+.Alternative_Inputs label{
+    margin-bottom: 0;
+}
+.imageUpload{
+    color:white;
+    font-size:19.5px;
+}
+.imageUpload:hover{
+    font-size: 24px;
+}
+.LiveStreamStart span{
+    font-weight: 700;
+    font-family: "Poppins";
+}
+.LiveStreamStart i{
+    color: red;
+}
+
+.postComments{
+    display: none;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 1.5em;
+    gap: 1.5em;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+.showCommentsSection{
+    display: flex !important;
+}
+.CommentsSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 1.5em;
+    max-height: 520px;
+    overflow-y: scroll;
+}
+.postComments p{
+    margin-bottom: 0;
+}
+.CreatePost_Btn button{
+    background: rgba(125, 41, 160, 0.5);
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+    width: 12em;
+    padding: 0.5em 1em 0.7em 1em;
+}
+.createComment{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.createComment_ProfilePicture{
+    display: flex;
+    width: 10%;
+}
+.postComment_btn{
+    padding: 0.5em;
+    white-space: nowrap;
+    border-radius: 12px;
+    background: rgba(125, 41, 160, 0.5);
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+}
+#commentInput{
+    width: 80%;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: 0.5;
+    outline: none;
+}
+.postedComment_Actions{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    padding-right: 1em;
+    justify-content: flex-end;
+}
+.Liked{
+    color: #1877F2 !important;
+}
+/* Scrollbar Görünüm */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}

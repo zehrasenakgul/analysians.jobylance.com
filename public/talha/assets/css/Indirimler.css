@@ -1,0 +1,224 @@
+.dropdown-menu{
+    width: max-content !important;
+    overflow: hidden;
+    transform: none !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    left: 0 !important;
+    top: 100% !important;
+}
+
+
+
+.Indirimler-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width : 68%;
+    padding: 2em;
+    margin-left: 2em;
+    height: auto;
+    min-height: 56.375em;
+    background: #232323;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: #232323, 
+    linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    overflow: hidden;
+}
+.IndirimKodlari-Container{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+.GreetingContainer{
+    width: 100%;
+    padding-left: 2em;
+    text-align: center;
+}
+.Indirimler_Greeting{
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.IndirimKodu{
+    width: 95%;
+    min-width: 250px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #1B1B1B;
+    border-radius: 8.81239px;
+    box-shadow: 0px 7.48394px 22.4518px rgba(0, 0, 0, 0.523);
+}
+.IndirimKodu span{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.5312px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.IndirimKodlari_Interactions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    gap: 1em    ;
+}
+.IndirimKodlari_Interactions #DeactivateButton{
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background: #641CFF;
+    border-radius: 19.8279px;
+}
+.IndirimKodlari_Interactions #DeleteButton{
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background: white;
+    border-radius: 19.8279px;
+    color: black;
+}
+.IndirimOlustur-Container{
+    margin-top: 2em;
+    width: 95%;
+    background: rgba(235, 239, 242, 0.04);
+    box-shadow: 0px 7.48394px 22.4518px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+}
+.IndirimOlustur-Inputs{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+.IndirimOlustur-Inputs label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.9679px;
+    line-height: 18px;
+    color: #A7A7A7;
+}
+.IndirimOlustur-Inputs input{
+    width: 24.9375em;
+    padding: 1em;
+    padding-left: 2em;
+    background: #1B1B1B;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.LabelledInput{
+    display: flex;
+    flex-direction: column;
+}
+#DateInputIcon{
+    color: white;font-size:24px;position:absolute;right: 1.5em;top: 1.7em;
+}
+.KodOlusturButton{
+    width: 30%;
+    margin-top: 1em;
+    padding: 1em;
+    background: rgba(125, 41, 160, 0.5);
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+}
+@media screen and (max-height : 900px) {
+    #DateInputIcon{
+        top: 1.5em;
+    }
+}
+@media screen and (max-height : 900px) and (max-width : 500px) {
+    #DateInputIcon{
+        top: 1.5em;
+        right: 0em !important;
+    }
+}
+@media screen and (max-width: 940px) {
+    .IndirimKodu{
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+@media screen and (max-width : 730px) {
+    .IndirimOlustur-Inputs input{
+        width: 100%;
+    }
+    #DateInputIcon{
+       font-size:20px;right: 0;top:0;
+    }
+    .KodOlusturButton{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .PageContent-Container{
+        padding: 0.5em;
+    }
+    .Indirimler-Container{
+        width: 100%;
+        padding: 1em;
+        margin: 0 0 0 0;
+    }
+    #DateInputIcon{
+        font-size:16px;right: 1.3em;top:0;
+     }
+     .GreetingContainer{
+         width: 100%;
+        height: auto;
+         padding: 0 0 0 0;
+        margin:  0 0 0 0 ;
+         text-align: center;
+        }
+        .Indirimler_Greeting{
+         font-size: 30px;
+         white-space: break-word;
+         width: 100%;
+         line-height: 40px;
+         text-align: center;
+    }
+    .IndirimKodlari_Interactions #DeactivateButton{
+        padding: 0.5em;
+        width: 100px;
+    }
+    .IndirimKodlari_Interactions #DeleteButton{
+        width: 100px;
+        padding: 0.5em;
+    }
+    .IndirimOlustur-Container{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 500px) {
+    .IndirimOlustur-Inputs{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #DateInputIcon{
+        font-size:16px;right:1em !important;top:2.4em;
+     }
+}
+@media screen and (max-width : 350px) {
+    #DateInputIcon{
+        display: none;
+    }
+}

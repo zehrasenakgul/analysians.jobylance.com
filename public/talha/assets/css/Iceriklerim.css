@@ -1,0 +1,337 @@
+.Iceriklerim-Container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: auto;
+    padding-bottom: 2em;
+    margin-left: 4em;
+    height: auto;
+    background: #232323;
+    backdrop-filter: blur(9.52591px);
+    border-radius: 19.0518px;
+}
+.Iceriklerim_Row1{
+    display: flex;
+    height: auto;
+}
+.Iceriklerim_Row2{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+.Grouplarim{
+    width: 80%;
+}
+.Grouplarim_Header{
+    padding: 0.7em 0 0 0.7em;
+}
+.Egitimlerim_Header{
+    padding: 0.7em 0 0 0;
+}
+
+.grupolusturlast{
+    margin-top: 3em;
+}
+.GroupCards{
+    width: 100%;
+    padding: 2em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.GroupCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2em;
+    background: #2E3650;
+    border-radius: 19.0518px;
+}
+.EgitimCards{
+    display: flex;
+    gap: 1em;
+    padding-right: 2em;
+}
+.EgitimCard{
+    position: relative;
+    width: 320.4px;
+    height: 250.13px;
+    border-radius: 25px;
+    background: url(../media/EgitimBG.png);
+    background-size: cover;
+}
+.EgitimSahibi{
+    position: absolute;
+    width: max-content;
+    left: 1em;
+    top: 1.2em;
+}
+.EgitimTotalTime-Container{
+    position: absolute;
+    width: max-content;
+    right: 1em;
+    top: 1em;
+    padding: 0.3em;
+    border-radius: 12px;
+    background-color: tomato;
+}
+.EgitimIsmi-Container{
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background: rgba(60, 17, 134, 0.756);
+    color: white;
+    backdrop-filter: blur(23.2391px);
+    border-radius: 21.9959px;
+}
+
+.YeniGrup_Olustur{
+    width: 550px;
+    height: auto;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3.75696px 3.75696px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18.7848px);
+    border-radius: 18.7848px;
+}
+.YeniEgitim_Olustur{
+    width: 550px;
+    height: auto;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3.75696px 3.75696px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18.7848px);
+    border-radius: 18.7848px;
+}
+.YeniGrup_Olustur_Row{
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.UploadImage{
+    width: 100px;
+    height: 100px;
+}
+.LabelledInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.LabelledInput input{
+    background: #1B1B1B;
+    padding: 0.5em;
+    border-radius: 7px;
+    border: none;
+}
+.LabelledInput label{
+    color: white;
+}
+
+
+.YeniEgitim_Olustur_Row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+#PhotoDropdownMenu{
+    padding: 0 0 0 0 !important;
+    background: black !important;
+    gap: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    left: 4em !important;
+    top: 4em !important;
+    transform: none !important;
+}
+.dropdown-item{
+    margin: 0 0 0 0 !important;
+}
+#GirisUcretiDropdown{
+    padding: 0 0 0 0 !important;
+    background: black !important;
+    gap: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    left: 0 !important;
+    top: 3em !important;
+    transform: none !important;
+}
+#OlusturButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 189.44px;
+    height: 31.48px;
+    padding: 2em;
+    right: 2em;
+    bottom: 1.5em;        
+    background: rgba(125, 41, 160, 0.5);
+    border-radius: 6.99583px;
+}
+.OlusturButtonContainer{
+    direction: rtl;
+}
+#EgitimBilgisi,#EgitimIcerigi,#BilgilendirmeYazisi,#GrupKurallari{
+    padding: 2em;
+}
+#EgitimIcerigi{
+    color: white;
+}
+
+.UcretBelirleme{
+    width: 20%;
+    min-width: 90px;
+    flex-wrap: nowrap;
+}
+.LabelledInput.LabelledInputLast{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.FileInput{
+    position: relative;
+}
+.FileInput span{
+    position: absolute;
+    bottom: 2em;
+    right: 4em;
+}
+@media screen and (max-width: 1550px) {
+    .Iceriklerim_Row1,.Iceriklerim_Row2{
+        flex-direction: column;
+    }
+    .Egitimlerim_Header{
+        padding-left: 0.7em;
+    }
+    .Iceriklerim_Row2{
+        margin-top: 2em;
+        padding: 1em;
+        gap: 3em;
+    }
+    .Grouplarim{
+        width: 100%;
+    }
+    .EgitimCards{
+        justify-content: space-around;
+    }
+    .YeniEgitim_Olustur,.YeniGrup_Olustur{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .PageContent-Container{
+        padding:0.5em;
+    }
+    .grupolusturlast{
+        margin-top: 0em;
+    }
+    .Egitimlerim_Header,.Grouplarim_Header{
+        padding-left: 0;
+    }
+    .Iceriklerim-Container{
+        margin: 0 0 0 5em;
+        width: 90%;
+    }
+    .Grouplarim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .GroupCards{
+        justify-content: center;
+    }
+    .Egitimlerim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .EgitimCards{
+        width: 100%;
+        padding: 0 0 0 0;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .EgitimCard{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .DashboardMenu{
+        margin-left: 3.2em;
+    }
+}
+@media screen and (max-width : 850px) {
+    .Iceriklerim-Container{
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    .DashboardMenu{
+        margin-left: -3em;
+    }
+    #drapdropdirection{
+        display: none;
+    }
+}
+@media screen and (max-width : 800px) {
+    .UploadImage{
+        width: 90px;height: 90px;
+    }
+    #LabelledInput_ResponsiveSensitive_Inputs{
+        width: 100%;
+    }
+    #OlusturButton{
+        width: 150px;
+    }
+    #EgitimIsmi,#GrupIsmi{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .Iceriklerim-Container .LabelledInput input{
+        width: 100%;
+    }
+    .DashboardMenu{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width : 430px) {
+    #EgitimIcerigi{
+        padding: 2em 2em 4em 2em;
+    }
+}
+@media screen and (max-width : 310px) {
+    .LabelledInput.LabelledInputLast{
+        flex-direction: column;
+    }
+    #OlusturButton,.OlusturButtonContainer{
+        position: unset;
+        width: 100%;
+    }
+    #UcretBelirleme {
+        width: 100%;
+        min-width: unset;
+        flex-wrap: unset !important;
+    }
+    .UcretBelirleme{
+        width: 100%;
+    }
+    #UcretBelirleme > *{
+        width: 100%;
+        min-width: unset;
+    }
+}

@@ -1,0 +1,181 @@
+body{
+    background: linear-gradient(108.17deg, #1D123D 0%, #121111 99.58%);
+}
+p,span,h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+button{
+    border: none;
+    color: white;
+}
+.toggleRegister{
+    background:#7D29A0;
+    color:white !important;
+}
+.WebpageContent{
+    background: none;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* NAV */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap');
+ul,li,a,a:hover{
+    text-decoration: none;
+    list-style-type: none;
+}
+.Navi-Container{
+    z-index: 4;
+    background: #1D123D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+}
+ .navbar{
+    background-color: white;
+    border:solid 1px black;
+    width: 95%;
+    height: 6em;
+    border-radius: 18px;
+    position: relative;
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+    gap: 3em;
+    margin-left: 3em;
+}
+}
+.LeftLinks{
+    color: #7D29A0 !important;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-top: 1em;
+}
+.LeftLinks:hover{
+    padding-bottom: 1em;
+    border-bottom: 3px solid #7D29A0;
+}
+.RightLinks{
+    position: absolute;
+    right: 6em;
+}
+.RightLink{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+#RightLink2{
+    padding: 1em;
+    background: #7D29A0;
+    border-radius: 9.52128px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.BrandLogoWeb{
+    margin-left: 22em;
+    width: 280px;
+}
+.BrandLogoWeb img{
+    width: 280px;
+}
+.searchbarform{
+    position: relative;
+    width: 20%;
+}
+.searchbarform input{
+    padding: 0.2em 0 0.2em 1em;
+    width: 100% !important;
+    background: #F5F5F5;
+    border-radius: 12px;
+    outline: hidden;
+    border: hidden;
+}
+.searchbarform input:focus,.searchbarform input:active{
+    outline: hidden;
+    border: hidden;
+}
+.searchbarform button{
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.05em;
+    color: grey;
+}
+.MobileBrandLogo{
+    display: none;
+}
+@media screen and (max-height :900px){
+    .BrandLogoWeb{
+        width: 200px;
+        margin-left: 20em !important;
+    }
+    .BrandLogoWeb img{
+        width: 200px;
+    }
+}
+@media screen  and (max-width : 1400px){
+    .BrandLogoWeb{
+        margin-left: 12em;
+    }
+}
+@media screen and (max-width :1250px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+        gap: 1em;
+        margin-left: 1em;
+    }
+    .RightLinks{
+        right: 1em;
+    }
+}
+@media screen and (max-width : 992px) {
+    .searchbarform{
+        display: none;
+    }
+    #navbarTogglerDemo03{
+        background-color: white;
+        margin-top: 1.3em;
+        z-index: 99;
+        padding: 2em;
+    }
+    .BrandLogoWeb{
+        display: none;
+    }
+    .RightLinks{
+        position: unset;
+    }
+    .MobileBrandLogo{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0.85em;
+    }
+    .MobileBrandLogo img{
+        width: 200px;
+    }
+}
+@media screen and (max-width :500px) {
+    .MobileBrandLogo{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0.26em;
+    }
+    .MobileBrandLogo img{
+        width: 180px;
+    }
+}

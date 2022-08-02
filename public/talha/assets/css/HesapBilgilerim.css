@@ -1,0 +1,243 @@
+.LabelledInput{
+    display: flex;
+    padding: 0.5em;
+    width: 100%;
+    flex-direction: column;
+}
+.LabelledInput label{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.0954px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+.LabelledInput Input{
+    width: 100%;
+    padding: 0.5em;
+    padding-left: 1em;
+    border: none;
+    background: #1B1B1B;
+    color: white;
+    border-radius: 9.43463px;
+}
+.ProfilePicture-Container{
+    margin-top: 1em;
+}
+.HesapBilgilerim{
+    width: 100%;
+}
+.HesapBilgilerim-Container{
+    width: 70%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-left: 11em;
+    height: auto;
+    background: #232323;
+    border-radius: 9.43463px;
+}
+.HesapBilgilerim-Header{
+    width: 100%;
+    text-align: left;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24.181px;
+line-height: 31px;
+color: #FFFFFF;
+}
+.HesapBilgilerim_ProfilePicture{
+    opacity: 0.8;
+    border-radius: 100%;
+    border: 7.86429px solid #1B1B1B;
+    filter: drop-shadow(-3.93215px 3.93215px 15.7286px rgba(120, 130, 146, 0.5));
+}
+.InputRowQuiplet{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.InputRowQuiplet input{
+    width: 247.5px;
+    height: 47.17px;
+}
+.InputRow{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.InputRow input{
+    width: 100%;
+}
+.HesapBilgilerimButtons{
+    width: 100%;
+    padding: 1em;
+    padding-top: 3em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#SifreDegistirButtonu{
+    width: 163px;
+    height: 30.82px;
+    background: #1D123D;
+    border-radius: 6.84874px;
+}   
+#DuzenleButtonu{
+    width: 224.54px;
+    height: 42.46px;
+    background: #7D29A0;
+    border-radius: 9.43463px;
+}
+
+
+/* BIO */
+.ProfileBio-Container{
+    width: 20%;
+    height: max-content;
+    margin-left: 6em;
+    background: linear-gradient(180deg, #181325 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 30px;
+    box-shadow: 0px 20px 20.8918px rgba(0, 0, 0, 0.05) ;
+    padding: 1em;
+}
+.ProfileBio_Username{
+    margin: 0 0 0 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 1.0125em;
+line-height: 19px;
+color: #FFFFFF;
+}
+.ProfileBio_UserTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  0.6075em;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.ProfileBio span{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 0.8125em;
+line-height: 15px;
+color: #FFFFFF;
+}
+.Biography{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.ProfileInteractions{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.EditProfile{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;    
+    gap: 0.5em;
+}
+
+
+
+@media screen and (max-width : 1500px ) {
+    .PageContent-Container{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1em;
+        gap: 2em;
+    }
+    .HesapBilgilerim-Container,.ProfileBio-Container{
+        width: 65%;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .PageContent-Container{
+        align-items: flex-end;
+    }
+    .DashboardMenu{
+        width: 90%;
+    }
+    .HesapBilgilerim-Container,.ProfileBio-Container{
+        width: 90%;
+    }
+}
+@media screen and (min-width :1100px) and (max-height : 900px) {
+    .PageContent-Container{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 3em;
+        gap: 0;
+    }
+    .HesapBilgilerim-Container{
+        margin-top: 0;
+        margin-left: 22em;
+    }
+    .HesapBilgilerimButtons{
+        gap: 1.5em;
+    }
+}
+@media screen and (max-width : 850px) {
+    .PageContent-Container{
+        margin-right: 0;
+        padding: 0.5em;
+    }
+    .HesapBilgilerim-Container{
+        width: 100%;
+    }
+    .DashboardMenu{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .PageContent-Container{
+        padding: 0.5em;
+    }
+    .DashboardMenu{
+        width: 100%;
+    }
+    .HesapBilgilerim-Container,.ProfileBio-Container{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 450px) {
+    .HesapBilgilerimButtons{
+        gap: 1em;
+    }
+    .ProfileBio-Container{
+        font-size: 14px;
+    }
+    .profileinfo{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 250px) {
+    #SifreDegistirButtonu{
+        padding:2em 0 2em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

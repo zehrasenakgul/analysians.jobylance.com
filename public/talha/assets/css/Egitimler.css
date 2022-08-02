@@ -1,0 +1,261 @@
+.PageContent-Container{
+    gap: 10em;
+    width: 100%;
+    padding-bottom: 2em;
+}
+.Egitimler-Container{
+    width: 87%;
+}
+.Egitimler_Class{
+    width: max-content;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-radius: 35.1565px;
+}
+.Egitimler_Class_Icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.14em;
+    height: 3.14em;
+    border-radius: 100%;
+}
+.Egitimler_Class_ClassName{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size:  1.15625em;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+
+/* EGİTİM KARTLARI */
+.EgitimlerListem-Container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+}
+.Egitimler{
+    width: 100%;
+    padding-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    column-gap: 5em;
+}
+.EgitimCard{
+    max-width: 14.5em;
+    border: 1px solid transparent;
+    box-shadow: 2.65487px 1.32743px 5.30973px 1.32743px rgba(0, 0, 0, 0.27);
+border-radius: 26.5487px;
+    background: 
+    linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+    linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.EgitimCard_Info{
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+.EgitimCard_Info_StudentCount,.EgitimCard_Info_CourseTotalTime{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.5em;
+    line-height: 10px;
+    color: #878787;
+}
+.EgitimCard_CourseName{
+    padding-top: 1em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.15625em;
+    line-height: 22px;
+    color: #A0A0A0;
+    text-align: center;
+}
+.CourseOwner_Username{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 0.6625em;
+line-height: 13px;
+color: #8E8D8D; 
+}
+.DahaFazlaEgitim-Button{
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+    border: 2.00722px solid #7D29A0;
+    border-radius: 20.0722px;    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 0.9125em;
+line-height: 18px;
+color: #FFFFFF;
+}
+
+
+
+.RightSide_Egitimler-Container{
+    width: 40%;
+    height: max-content;
+    padding: 1em;
+    margin-right: 4em;
+    position: static;
+    border: 1px solid transparent;
+    box-shadow: 1.26439px 5.05757px 6.32196px 2.52878px rgba(0, 0, 0, 0.1);
+    border-radius: 12.6439px;
+    background: 
+    linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+    linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.EgitimCard_Horizantal{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.EgitimCard_Horizantal_CourseName{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.15625em;
+    line-height: 22px;
+    color: #A0A0A0;
+}
+.EgitimCard_Horizantal_CourseTotalTime{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 0.7875em;
+line-height: 15px;
+color: #848080;
+}
+@media screen and (max-width : 1700px) {
+    .Egitimler-Container,.RightSide_Egitimler-Container{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1370px) {
+    .Egitimler_Class_First{
+        margin-left: 3em;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .PageContent-Container{
+        margin: -8em 0 0 0;
+        width: 100%;
+        padding-left: 5em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .Egitimler_Class_First{
+        margin-left: 0;
+    }
+    .EgitimlerListem-Container .Egitimler_Class{
+        margin-left: 4em;
+    }
+    .Egitimler-Container{
+        width: 100%;
+        font-size: 14px;
+    }
+    .RightSide_Egitimler-Container{
+        width: max-content;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .EgitimlerListem-Container .Egitimler_Class{
+        margin-left: 0;
+    }
+    .PageContent-Container{
+        margin: -8em 0 0 0;
+        width: 100%;
+        padding: 0 0 0 8em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .Egitimler-Container{
+        padding: 0 0 0 0;
+        width: 100%;
+        font-size: 14px;
+    }
+    .RightSide_Egitimler-Container{
+        padding: 0 0 0 0;
+        width: max-content;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 850px) {
+    .PageContent-Container{
+        margin: 2em 0 0 0;
+        width: 100%;
+        padding: 1em;
+        font-size: 14px;
+        gap: 2em;
+    }
+    .SideNavbarDummy{
+        display: none;
+    }
+    .Egitimler-Container{
+        padding: 4em;
+        width: 100%;
+        font-size: 14px;
+    }
+    .Egitimler{
+        width: 100%;
+        padding: 0 0 1em 0;
+        margin: 0 0 0 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+    .EgitimCard{
+        padding: 0 0 0 0;
+        max-width: 50%;
+        width: 100%;
+        min-width: 234px;
+    }
+    .EgitimCard_CourseName{
+        padding: 0.1em;
+        margin-top: 0.5em;
+    }
+    .RightSide_Egitimler-Container{
+        width: 100%;
+        font-size: 14px;
+        margin: 0 0 0 0;
+        padding: 1em 0 1em 1em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Egitimler-Container{
+        padding: 0;
+    }
+}
+@media screen and (max-width : 300px) {
+    .EgitimCard_Horizantal{
+        flex-direction: column;
+    }
+}

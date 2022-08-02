@@ -1,0 +1,249 @@
+.LiveStream-Container-Positioner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.LiveStream-Container{
+    width: 100%;    
+    padding: 0 1em 0 3em;
+    display: flex;
+    flex-direction: column;
+}
+.LiveStream_and_Chat{
+    width: 100%;
+    display: flex;
+
+}
+.LiveStream{
+    width: 75%;
+    height: max-content;
+    position: relative;
+}
+.LiveStream_Controls_FlexxedBtns{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.LiveStream_Controls_FlexxedBtns button{
+    padding: 0.2em 1em 0.2em 1em;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.LiveStream_VolumeBtn{
+    position: relative;
+    padding:6.5em 1em 0.2em 1em;
+}
+#VolumeLevel{
+    display: none;
+    transform:rotateZ(270deg);
+    width: 100px;
+    position: absolute;
+    left: -0.9em;
+    bottom: 4em;
+}
+.LiveStream_Controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom:1em;
+    padding: 0 1em 0 1em;
+    position: absolute;
+}
+.LiveStream_Video{
+    border-radius: 20px 0 0 20px;    
+    width: 100%;
+    height: auto;
+}
+
+.LiveStream_Chatbox{
+    width:25%;
+    height: max-content;
+    padding-bottom: 1em;
+    border-radius: 0 20px 20px 0;   
+    background: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Chatbox_Header{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 0.5em;
+}
+.Chatbox{
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    max-width: 400px;
+    overflow-y: scroll;
+    gap: 1em;
+    width: 100%;
+    padding: 1em;
+}
+.SentMessageBox{
+    background-color: transparent;
+    text-align: right;overflow-wrap: break-word;
+}
+.RecievedMessageBox{
+    background-color: transparent;
+    overflow-wrap: break-word;
+}
+
+.MessageInput-Container{
+    position: relative;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: stretch;
+    padding-left: 1em;
+}
+.MessageInput_DotDropdownBtn{
+    position: absolute;
+    left: 0;
+    color: #7D29A0;
+    transform: rotate(-90deg);
+    font-size: 24px;
+}
+#MessageInput{
+    border: none;
+    width: 16em;
+    padding-left: 1em;
+}
+#SendMessage{
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: #7D29A0;
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.StreamInfo-Container{
+    width: 75%;
+    margin-top: 2em;
+}
+.StreamOwner_Info{
+    width: 100%;
+    display : flex;
+    align-items: center;
+    padding-left: 4em;
+    position: relative;
+}
+.StreamOwner_Info_Text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+.StreamOwner_Info_Text > * {
+    width: 60%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.StreamOwner_Info_Bio{
+    font-size: 14px;
+    font-weight: 400;
+}
+.StreamInfo_Statistics{
+    position: absolute;
+    top: 2em;
+    right: 3em;
+}
+@media screen and (max-height : 900px) {
+    .Navi-Container{
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width : 1800px) {
+    body{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1400px) {
+    body{
+        font-size: 16px;
+    }
+    .LiveStream_and_Chat{
+        width: 100%;
+        flex-direction: column;
+    }
+    .StreamInfo-Container{
+        margin-top: 2em;
+    }
+    .LiveStream{
+        width: 100%;
+    }
+    .LiveStream_Chatbox{
+        width: 100%;
+    }
+    .Chatbox{
+        width: 100%;
+        max-width: unset;
+        padding: 1em;
+    }
+    .MessageInput-Container{
+        width: 90%;
+    }
+    #MessageInput{
+        width: 80%;
+    }
+    .StreamInfo-Container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 850px){
+    .LiveStream_Video{
+        border-radius: 20px;
+    }
+    .LiveStream-Container{
+        padding: 0.5em;
+    }
+    .StreamInfo-Container{
+        width: 100%;
+    }
+    .LiveStream_Chatbox{
+        border-radius: 20px;
+    }
+    .StreamOwner_Info_Text >*{
+        width: 100%;
+    } 
+    .StreamOwner_Info{
+        padding: 1em;
+    }
+}
+@media screen and (max-width :446px) {
+    .LiveStream_Video,.LiveStream{
+        min-height: unset;
+    }
+    .StreamOwner_Info{
+        display: flex;flex-direction: column;
+    }
+    .StreamOwner_Info_ProfilePicture{
+        width: 80px;
+        height: 80px;
+    }
+    .StreamOwner_Info_Bio{
+        font-size: 12px;
+    }
+    .StreamInfo_Statistics{
+        position: unset;
+        bottom: 0;
+        right: 0;
+    }   
+    .LiveStream_Controls i{
+        font-size: 14px !important;
+    }
+    .LiveStream_Controls{
+        bottom: 0.2em;
+        padding: 0;
+    }
+}

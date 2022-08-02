@@ -1,0 +1,208 @@
+.WebpageContent{
+    padding-bottom: 1em;
+}
+#AnalysianSearch{
+    width: 40%;
+    border: none;
+    background: #1B1B1B;
+    padding: 1em;
+    padding-left: 1em;
+    border-radius: 12px;   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.PageContent-Container{
+    justify-content: center;
+}
+.Analysians-Container{
+    width: 80%;
+    padding: 2em;
+    height: max-content;
+    background: #232323;
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+}
+.Analysians-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Analysians-Header span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1em;
+    padding-left: 4em;
+}
+.AnalysiansCards{
+    gap: 7em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: space-around;
+}
+.Analysians_Page{
+    display: none;
+    flex-wrap: wrap;
+    flex: 0 0 400px;
+    gap: 5em;
+}
+.AnalysianCard{
+    --AnalysianCardWidth:18.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: var(--AnalysianCardWidth);
+    height: 25em;
+    background: #1B1B1B;
+    border-radius: 18.9146px;
+    box-shadow: 0px 1.51317px 28.3718px rgba(0, 0, 0, 0.25);
+    border-radius: 18.9146px;
+    position: relative;
+}
+#CardFrame{
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+}
+.AnalysianProfilePicture{
+    border-top: 2px solid#7D29A0;
+    border-right: 2px solid#7D29A0;
+    padding: 0.5em;
+    border-radius: 55%;
+    width: 5.9em;
+    height: 5.9em;
+}
+.AnalysianCard-Textbox{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Analysian_Username{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Analysian_Bio{
+    padding: 1em;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.AnalysianCard-Socials{
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+}
+#ProfileGitButton{
+    width: 6em;
+    padding: 0.3em;
+    border: none;
+    color: white;
+    background: #7D29A0;
+    border-radius: 3.78291px;
+}
+
+.Pagination{
+    width: 100%;
+    margin-top: 2em;
+    gap: 2em;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: scroll;
+}
+.PageNumber{
+    background-color: transparent;
+    cursor: pointer;
+}
+.activeButton{
+    color: #7D29A0;
+}
+@media screen and (max-height : 900px ) and (max-width : 1400px) {
+    .AnalysianCard{
+        font-size: 15px;
+    }
+    .Analysians-Container{
+        padding: 0.5em;
+        margin-top: -1em;
+    }
+    .Pagination{
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width : 1000px){
+    .PageContent-Container{
+        padding: 0.5em;
+    }
+    .Analysians-Container{
+        width: 100%;
+        padding: 2em;
+    }
+    .AnalysianCard{
+        width: 100%;
+    }
+    .Analysians-Header{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        justify-content: center;
+    }
+    .Analysians-Header span{
+        padding: 0 0 0 0;
+        font-size: 30px;
+    }
+    #AnalysianSearch{
+        width: 90%;
+    }
+    .WebpageContent{
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width : 330px) {
+    .AnalysianCard-Socials{
+        margin-top: 0.6em;
+    }
+    .AnalysianCard{
+        gap: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}   

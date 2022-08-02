@@ -1,0 +1,277 @@
+.PageContent-Container{
+    padding: 0 4em 0 4em ;
+}
+.KursForm-Container{
+    padding: 1em;
+    width: 100%;
+    background-color: #232323;
+    border-radius: 20px;
+}
+.KursForm-Header{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.3);
+}
+.KursForm-Content{
+    width: 100%;
+    display: flex;
+}
+.LeftContainer{
+    width: 70%;
+}
+.LeftContainer_Forms{
+    width: 100%;
+    padding: 1em;
+}
+#CourseTitle_Input{
+    width: 100%;
+}
+#Course_Description{
+    width: 100%;
+    height: 8em;
+    resize: none;
+    background: #1B1B1B;
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    border: none;
+    color: white;
+    max-height:10em;
+}
+
+
+/* Accordion */
+.LeftContainer_Forms_Sections{
+    margin-top: 2em;
+    padding-top: 2em;
+    width: 100%;
+    height: auto;
+    border-top: solid 3px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.Accordions{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.Accordion-Container{
+    background: #1B1B1B;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1em;
+}
+.showAccordion{
+    display: block !important;
+}
+.expandedAccordion_btn{
+    transform: rotate(-180deg);
+}
+.Accordion-Header{
+    user-select: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.Accordion_Section_Title{
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.Accordion-Content-Container{
+    display: none;
+    width: 100%;
+    padding: 2em;
+    padding-bottom: 0;
+    height: auto;
+    background-color: #1B1B1B;
+}
+.Accordion-Content-List{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.accordionContent{
+    display: flex;
+    justify-content: space-between;
+}
+.accordionContent span{
+    font-family: "Inter";
+    opacity: 0.6;
+    font-size: 1em;
+    font-weight: 400;
+}
+#Delete_btn{
+    position: absolute;
+    right: 2em;
+    color: rgb(190, 45, 45);
+}
+
+.Add-Accordion-Container{
+    border-top: #1B1B1B 5px solid;
+    padding-top: 1em;
+}
+.New-Accordion-Container{
+    display: none;
+}
+.accordionPreview{
+    display: none;
+}
+.newAccordionShow{
+    display: block !important;
+}
+.previewShow{
+    display: block !important;
+}
+.Inputs_for_NewAccordion{
+    display: flex;
+    border-top: 5px rgba(0, 0, 0, 0.1) solid;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+}
+.saveAccordion{
+    background: rgba(125, 41, 160, 0.5);
+    padding: 1em;
+    border-radius: 12px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+#PreviewText{
+    display: none;
+}
+#add_accordionContent{
+    text-align: center;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+    background: rgba(125, 41, 160, 0.5);
+    padding: 1em;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+#remove_accordionContent{
+    text-align: center;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+    background: rgb(199, 30, 30);
+    padding: 1em;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.Add-Accordion-Container button{
+    background: rgba(125, 41, 160, 0.5);
+    padding: 1em;
+    width: 100%;
+    border-radius: 12px;
+}
+.createSectionContent input,#New_Section_Name{
+    width: 100%;
+}
+
+
+
+/*Rigth Cont*/
+.RightContainer{
+    width: 30%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.Options-Container{
+    gap: 0.5em;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 25px 25px 50px 25px #1B1B1B;
+    border: rgba(125, 41, 160, 0.3) 3px solid;
+}
+.Options{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.LabelledInput select{
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+}
+.Options .LabelledInput input{
+    width: 100%;
+}
+
+.Course_Intro_Video-Container{
+    gap: 0.5em;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 25px 25px 50px 25px #1B1B1B;
+    border: rgba(125, 41, 160, 0.3) 3px solid;
+}
+.Course_Intro_Video-Container input{
+    width: 100%;
+}
+.Course_Intro_Video{
+    width: 100%;
+}
+
+.manage_Course{
+    gap: 0.5em;
+    border-radius: 12px;
+    margin-top: 40px;
+    padding: 1em;
+    border: rgba(125, 41, 160, 0.3) 3px solid;
+}
+.manage_Course_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.manage_Course_form button{
+    padding: 1em;
+    background : rgba(125, 41, 160, 0.3);
+    border-radius: 12px;
+}
+.manage_Course_form button:hover{
+    background : rgba(125, 41, 160, 0.5);
+}
+.manage_Course_form button:nth-child(2){
+    background-color: rgba(193, 33, 33,0.3);
+}
+.manage_Course_form button:nth-child(2):hover{
+    background-color: rgba(193, 33, 33,0.7);
+}
+.video-js .vjs-tech{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+@media screen and (max-width : 1100px) {
+    .KursForm-Content{
+        flex-direction: column;
+    }
+    .LeftContainer,.RightContainer{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 850px) {
+    .PageContent-Container{
+        padding: 0.5em;
+    }
+    .WebpageContent{
+        padding-bottom: 100px;
+    }
+}
+.video-js{
+    width: 100%;
+    height: 200px;
+}

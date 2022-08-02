@@ -1,0 +1,1111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat&family=Oswald&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;700&family=Oswald&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap');
+body{
+    overflow-x: hidden;
+}
+.Welcoming-Container{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(172.78deg, #1D123D 0%, #121111 100.48%);
+    z-index:3;
+    position: relative;
+}
+.BG-Implement{
+    background: url('../media/background.png');
+}
+.WebpageContent{
+    background: url('../media/Circuit.svg');
+    background-size: 120%;
+    background-position:-14em;
+    background-position-y:120%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 48em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#RightBoxCards_Png{
+    width: 31.5em;
+    height: 33.5em;
+}
+.Left-Box{
+    margin-bottom: 19em;
+    width: 36em;
+    height: 15em;
+}
+.Right-Box{
+    margin-bottom: 19em;
+    width: 36em;
+    height: 15em;
+}
+#LeftHeader{
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7em;
+    line-height: 1.4em;
+}
+.button{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    width: 25em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 7px rgba(0, 148, 190, 0.29);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button h3{
+    margin-left: 1em;
+    margin-bottom: 0;
+    font-size: 1.75em;    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 44px;
+    padding-left: 1em;
+}
+#downbutton{
+    position: absolute;
+    left: 48.7%;
+    top: 110%;
+    color: rgb(205, 205, 205);
+    cursor: pointer;
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+}
+#downbutton:hover{
+    font-size: 1.2rem;
+    height: 28px;
+    background-color: white;
+    color: black;
+    text-align:center;
+}
+
+.SimpleBanner{
+    margin-top: 2em;
+    padding: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+#SimpleBannerTxt{
+    width: 55%;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.JoinUs_Buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 44px;
+    width: 13.828125em;
+    min-width: 13.828125em;
+    white-space: nowrap;
+    padding: 1em 3em 1em 1.5em;    
+    background: #4C1A61;
+    border-radius: 14.6956px;
+}
+
+
+.LinkedCards-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    gap:2em;
+}
+.LinkedCard{
+    width: 21em;
+    height: 27em;
+}
+.White-Register-Container{
+    width: 100%;
+    height: 52em;
+    background: url('../media/background.png');
+    background-color: white;
+    box-shadow: inset 4px 4px 8px 10px rgba(162, 57, 143, 0.15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.White-Register-Container h1{
+    margin-top: 2em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.5em;
+    width: 45%;color: #0E243A;
+    text-align: center;
+    line-height: 1em;   
+}
+.White-Register-Container p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    font-size: 2.25em;
+    line-height: 1.5em;
+    width: 55%;
+    text-align: center;
+}
+.White-Register-Container p span{
+    color :#4C1A61;
+    font-size: 3.5rem;
+}
+#WhitePageBtn{
+    margin-top: 0.5em;
+}
+
+.SuggestedUsers-SumCards-Container{
+    width: 100%;
+    height: 120em;
+}
+.SuggestedUserCards{
+    display: flex;
+    margin-left: -2.5em;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.SumCards{
+    width: 100%;
+    height: 50em;
+    margin-top: 7em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.FirstSumInfoBox{
+    position: absolute;
+    top: 43.7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    border-radius: 25px;
+    box-shadow: 0px 33.413px 50.1195px rgba(14, 36, 58, 0.1);
+}
+.dot{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.7em;
+    top: 160em;
+    right: 5em;
+}
+
+/* BOXES */
+.SumCards{
+    height: auto;
+}
+.SumInfoBox{
+    width: 61em;
+    height: 16em;
+    background-color: white;
+    box-shadow: 0px 33.413px 50.1195px rgba(14, 36, 58, 0.1);
+    border-radius: 16.7065px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+    margin-top: 2em;
+}
+.SumInfoBoxIcon{
+    width: 7.62em;
+    height: 7.62em;
+}
+.SumInfoBox-TextContainer{
+    width: 42em;
+    height: auto
+}
+.SumInfoBox-TextContainer h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.08em;
+    line-height: 2.5rem;
+    color: #0E243A;
+}
+.SumInfoBox-TextContainer p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2rem;
+    color: #000000;
+    margin-left: 0.2em;
+}
+@media screen and (max-width : 1500px) {
+    .SumInfoBox{
+        font-size: 14px; 
+    }
+    .SumInfoBox-TextContainer{
+        margin-top: 2em;
+    }
+    .SumInfoBox-TextContainer h1{
+        line-height: 2rem;
+    }
+    .SumInfoBox-TextContainer p{
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width :1370px) {
+    #SimpleBannerTxt{
+        width: 65%;
+    }
+    .SimpleBanner{
+        padding:4em;
+    }
+}
+@media screen and (max-width : 1300px) {
+    .SumInfoBox{
+        font-size: 12px;
+    }
+        .SuggestedAnalysians-Container{
+            font-size: 14px;
+        }
+}
+@media screen and (max-width : 1200px) {
+    .SumInfoBox{
+        font-size: 10px;
+    }
+    .SimpleBanner{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .SuggestedAnalysians-Container{
+        padding: 5em !important;
+    }
+}
+@media screen and (max-width : 900px) {
+    .SuggestedAnalysians-Container{
+        padding: 0 !important;
+    }
+    .SimpleBanner{
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+        font-size: 12px;
+    }
+    #SimpleBannerTxt{
+        width: 100%;
+        text-align: center;
+    }
+    .SumInfoBox{
+        flex-direction:column;
+        font-size: 8px;
+        height: auto;
+        padding: 5em;
+        width: 100%;
+        gap: 4em;
+    }
+    .SumInfoBoxIcon{
+        font-size: 12px;
+    }
+    .SumInfoBox-TextContainer{
+        font-size: 12px;
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+
+    .SumInfoBox-TextContainer h1{
+        line-height: 1.6rem;
+    }
+    .SumInfoBox-TextContainer p{
+        line-height: 1.5rem
+    }
+}
+@media screen and (max-width : 450px) {
+    .Container3TextBox h1{
+        margin-bottom: -1.7em !important;
+    }
+    .About-Containers{
+        margin-top: 150px;
+    }
+    .SuggestedAnalysians-Container{
+        margin-top: 150px;
+        padding-bottom: 4em !important;
+    }
+    .SuggestedAnalysians-Container h1{
+        text-align: center;
+    }
+    .see_all_analysians{
+        top: -1.5em !important;
+        right: 1em !important;
+    }
+    #AboutContainer1Paragraph{
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .circuitbackground,.LinkedCard{
+        font-size: 14px;
+    }
+    .LinkedCards-Container{
+        gap: 4em;
+    }
+    .Left-Box,.Right-Box{
+        margin-top: 5em;
+    }
+    .FirstSumInfoBox{
+        top: 40%;
+    }
+    .dot{
+        display: none;
+    }
+}
+@media screen and (max-width :1300px) {
+    .FirstSumInfoBox{
+        top: 37%;
+    }
+    .dot{
+        top: 36.05%;
+    }
+    .White-Register-Container{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .circuitbackground{
+        font-size: 12px;
+    }
+    .dot{
+        top: 35.1%;
+    }
+    .White-Register-Container{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width : 1130px) {
+    .White-Register-Container{
+        font-size: 11px;
+    }
+    .LinkedCards-Container{
+        display: flex;    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .Left-Box,.Right-Box{
+        margin-top : 0;
+        margin-bottom : 0;
+    }
+    .button{
+        width : 100% !important;
+    }
+    .SumCards{
+        padding:1em;
+}
+    .White-Register-Container{
+        font-size: 9px;
+        height: auto;
+        padding: 3em;
+    }
+    .White-Register-Container h1{
+        width: 100%;
+        margin-top: 0;
+    }
+    .White-Register-Container p{
+        width: 100%;
+    }
+    .SumCards{
+        font-size: 10px;
+    }
+    .circuitbackground{
+        font-size: 14px;
+    }
+    .Left-Box{
+        width: 100%;
+        height : auto;
+    }
+    .Right-Box{
+        display: none;
+    }
+    .LinkedCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+/* FOOTER */
+.Footer-Container{
+    height: 38.5em;
+    margin-top: 100px;
+    background: linear-gradient(132.35deg, #7D29A0 0.55%, #000000 115.49%), linear-gradient(141.17deg, #000066 -18.88%, #0342BF 173.25%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5em;
+}
+.CompanySummary{
+    width: 34.37em;
+}
+.FooterHeaders{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.7rem;
+    color: #FFFFFF;
+}
+.FooterTexts{
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2.7rem;
+    letter-spacing: 0.683694px;
+    color: #FFFFFF;
+}
+.WebLinks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2.7rem;
+    letter-spacing: 0.683694px;
+    color: #FFFFFF;
+}
+.WebLinks h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.WebLink{
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+.SocialMediaLinks h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    color: #FFFFFF;   
+}
+#TwitterIcon,#InstagramIcon{
+    width: 2.5em;
+    height: 2.3em;
+    margin-left: 2.5em;
+    margin-top: 1.5em;
+}
+@media screen and (max-width : 1200px) {
+    .CompanySummary,.WebLinks,.SocialMediaLinks{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 850px) {
+    .Footer-Container{
+        display: none;
+        height: auto;
+    }
+}
+
+
+/* about */
+#AboutContainer1{
+    height: 65em;
+}
+.About-Containers{
+    width: 100%;
+    height: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Container1TextBox{
+    height: 38em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    gap: 2em;
+}
+.Container1TextBox h1{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5em;
+    line-height: 1.2em;
+} 
+#AboutContainer1Paragraph{
+    color: #F9F9F9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 2.19em;
+    letter-spacing: 0.1em;
+}
+.Container2TextBox{
+    height: 38em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    gap: 2em;
+}
+#container2header{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+#container2paragraph{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.62em;
+    line-height: 3rem;
+    color: #FFFFFF;
+}
+#About-Container3{
+    justify-content: space-between;
+}
+.Container3TextBox{
+    padding-left: 12em;
+    height: 38em;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 13em;
+    gap: 4em;
+}
+.Container3TextBox h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin: 0 0 -0.7em 0;
+}
+.Container3TextBox .AboutContainerParagraphs{
+    width: 100%;
+}
+.Container4TextBox span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+.Container4TextBox p{
+    width: 100%;
+    margin-top: 1em;
+}
+.Container5TextBox span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+.Container5TextBox p{
+    width: 70%;
+}
+.CounterBoxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+.CounterBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 13em;        
+    border-radius: 8.00873px;
+    padding: 1em;
+    margin-right: 2em;
+}
+.CounterBox:hover{
+    background: linear-gradient(153.06deg, #4C1A61 -0.31%, #4C1A61 99.69%);
+    border-radius: 8.00873px;
+}
+.CounterBox:hover > .CountingMaterial{
+    color: white;
+}
+.CounterBox:hover > .CountingNumbers{
+    color: white;
+}
+.CountingNumbers{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+.CountingMaterial{  
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 32px;
+    text-align: center;
+    color: #5A7184;
+    width: 50%;
+}
+.AboutContainerParagraphs{
+    width: 45%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 148.2%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+#About-ContainerLast{
+    padding: 0 10em 0 10em;
+}
+@media screen and (max-width :1420px) {
+    .Container1TextBox,.Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        font-size: 12px;
+        height: auto;
+    }
+    .Container3TextBox{
+        margin-top: 0;
+    }
+    .RegisterBox{
+        font-size: 12px;
+    }
+    .RegisterBox-Container{
+        height: 22em !important;
+    }
+    #About-ContainerLast{
+        padding: 0 2em 0 2em;
+        width: 100%;
+    }
+    .AboutContent{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media screen and (max-width :1220px) {
+    .Container1TextBox,.Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        font-size: 10.5px;
+        height: auto;
+    }
+    .Container5TextBox span,.Container4TextBox span{
+        line-height: 60px;
+    }
+    .RegisterBox{
+        font-size: 12px;
+    }
+
+    .AboutContent{
+        width: 450px;
+        height: 450px;
+    }
+    .RegisterBox{
+        font-size: 12px;
+    }
+    .CounterBox:hover{
+        height: auto;
+    }
+}
+@media screen and (max-width :1000px) {
+    .Container1TextBox,.Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        font-size: 9.5px;
+        height: auto;
+    }
+    #About-ContainerLast > *{
+        width: 100%;
+    }
+    .RegisterBox{
+        font-size: 12px;
+    }
+    .AboutContent{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (max-width :850px) {
+    .WebpageContent{
+        background-size: cover;
+        background-size: 266%;
+        background-position: -30em;
+        background-position-y: center;
+        background-position-y: 220% !important;
+    }
+    .RegisterBox{
+        display: none;
+    }
+    .Container5TextBox,.Container4TextBox{
+        padding: 0;
+        text-align: center;
+    }
+    .Container5TextBox span,.Container4TextBox span{
+        line-height: 40px;
+    }
+    .Container5TextBox p{
+        width: 100%;
+    }
+    .Container5TextBox>*{
+        margin-top: 15px;
+    }
+    #SimpleBannerTxt{
+        font-size: 2em;
+    }
+    .SuggestedAnalysians-Header{
+        padding: 1em;
+    }
+}
+@media screen and (max-width :800px) {
+    .Container1TextBox,.Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        font-size: 10.5px;
+        height: auto;
+    }
+    .AboutContent{
+        width: 350px;
+        height: 350px;
+    }
+    #JoinUsButton{
+        width: 100%;
+    }
+    .RegisterBox{
+        display: none;
+    }
+}
+@media screen and (max-width :720px) {
+    .WebpageContent{
+        background: none;
+    }
+    #AboutContainer1{
+        height: auto;
+        margin-top: 8em;
+    }
+    .Container1TextBox,.Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        margin-top: -3em;
+        width: 100%;
+        font-size: 10.5px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+    #About-ContainerLast{
+        padding: 0;
+        text-align: center;
+    }
+    .Container2TextBox{
+        text-align: center;
+    }
+    .AboutContainerParagraphs{
+        text-align: center;
+    }
+    .AboutContainerParagraphs{
+        max-height: 400px;
+        width: 100%;
+        font-size: 20px;
+    }
+    #About-ContainerLast{
+        padding: 0 !important;
+    }
+    .AboutContent{
+        display: none;
+    }
+    #JoinUsButton{
+        width: 100%;
+    }
+    .CounterBoxes{
+        margin-left: 2em;
+    }
+}
+@media screen and (max-width :450px) {
+    .CounterBox{
+        font-size: 9px;
+    }
+    #AboutContainer1Paragraph br{
+        display: none;
+    }
+}
+@media screen and (max-width : 370px) {
+    .Container2TextBox,.Container3TextBox,.Container4TextBox,.Container5TextBox{
+        padding:0.6em;
+    }
+    #SimpleBannerTxt{
+        font-size: 1.7em;
+    }
+    #button1,#button2{
+        width: 110%;
+    }
+    .Container1TextBox h1{
+        font-size: 35px !important;
+    }
+    .AboutContainerParagraphs{
+        font-size: 16px;
+    }
+    .CounterBoxes,.CounterBox{
+        font-size: 8px !important;
+    }
+    .CounterBox{
+        height: auto !important;
+    }
+    .CountingMaterial{
+        width: 100%;
+    }
+    #CountingMat2{
+        text-align: center;
+        font-size: 11px;
+    }
+}
+.RegisterBox-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(7.03853px);
+    width: 41em;
+    height: 19em;
+    gap: 1em;
+    border: 1px solid transparent !important;
+    border-radius: 15.1204px !important;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%) !important;
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+    box-shadow: 0px 0px 10.8918px rgba(0, 0, 0, 0.05) !important;
+}
+.RegisterBox-Cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30em;
+}
+.RegisterBoxLast{
+    width: 60em;
+    /* position: absolute;
+    bottom: 5%;
+    left: 25%; */
+}
+.RegisterBoxLast .RegisterBox-Container{
+    width: 60em;
+    background: rgba(29, 29, 29, 0.5) !important;
+    box-shadow: 0px 2.86215px 2.86215px rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(6.66164px);
+}
+.RegisterBox-Container h1{
+    margin-top: 1em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.26em;
+    line-height: 3.62rem;
+    color: white;
+}
+#RegisterNowButton{
+    margin-top: 0.5em;
+    border: none;
+    padding: 0.6em;
+    width: 38%;
+    background: #FFFFFF;
+    box-shadow: 0px 11.0966px 27.7416px rgba(21, 37, 72, 0.1);
+    border-radius: 8.87732px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 2.06rem;
+    text-align: center;
+    color: #008B8B;
+}
+@media screen and (max-width : 1220px) {
+    #RegisterNowButton{
+        margin-top: -0.5em;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;700&family=Oswald&family=Poppins:wght@400;500&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap');
+.SuggestedAnalysians-Header{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.see_all_analysians{
+    position: absolute;
+    color: white;
+    right: 3em;
+    font-size: 1.5em;
+    top: 0.1em;
+}
+.SuggestedAnalysians-Container{
+    width: 100%;
+    padding: 13em;
+}
+.SuggestedAnalysians-Container h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1em;
+    line-height: 53px;
+}
+.SuggestedAnalysians_Cards{
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8em;
+    justify-content: center;
+    align-items: center;
+}
+.SuggestedUsers_Card{
+    width: 19em;
+    height: 24em;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16.0674px rgba(0, 0, 0, 0.1);
+    border-radius: 32.1348px;
+}
+.UserProfilePicture{
+    width: 100%;
+    border-radius: 12px;
+}
+.CardText{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.Username{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+color: #071B2A;
+}
+.UserTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #071B2A;
+}
+.Followers{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    color: #757575;
+}
+.SuggestedUser-CardButton{
+    width: 100%;
+    position: absolute;
+    bottom: 0.7em;
+    text-align:center;
+    background: none;
+    border: none;
+    color:#6E500D;
+    line-height: 31px;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+.SuggestedUser-CardButton:hover{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+@media screen and (max-height : 900px) {
+    .RegisterBoxLast{
+        left:20%;
+    }
+    .CounterBox{
+        height:15em;    
+    }
+    .Container3TextBox{
+        margin-top: 0;
+    }
+    #About-Container3,#About-Container4{
+        margin-top: 150px;
+    }
+    #About-ContainerLast{
+        padding: 0 10em 0 10em;
+    }
+    .WebpageContent{
+        height: 40em;
+        background-size: 140%;
+        background-position: -28em;
+        background-position-y: center;
+        background-position-y: 93%;
+    }
+}
+@media screen and (max-width :650px) {
+    .SuggestedAnalysians_Cards{
+        flex-wrap: nowrap;
+        padding: 1.5em 2em 1.5em 2em;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .SuggestedUsers_Card{
+        min-width: 240px;
+    }
+    .Container1TextBox h1{
+        font-size: 4.4em;
+    }
+    #SimpleBannerTxt{
+        line-height: unset;
+    }
+    #button1 img,#button2 img{
+        display: none;
+    }
+    #container2paragraph{
+        line-height: 2.1rem;
+    }
+}

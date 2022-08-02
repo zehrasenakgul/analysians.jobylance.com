@@ -1,0 +1,707 @@
+body{
+    background: linear-gradient(108.17deg, #1D123D 0%, #121111 99.58%);
+}
+
+/* CONTENT */
+.PageContent-Container{
+    margin-top:0;
+    width: 100%;
+    position: relative;
+    height:auto;
+    display: flex;
+}
+.MainpagePost-Container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MainpagePosts-Header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    width: 53.5625em;
+    height: 5em;
+}
+.MainpagePosts-Header h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875em;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Posts{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.Post{
+    display: flex;
+    max-width: 53.125em;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    padding: 2em;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.PostOwnerInfo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.PostOwner_Username,.PostedAgo{
+    width: 100%;
+}
+.PostOwnerText{
+    display: flex;
+    flex-direction: column;
+}
+.PostOwner_ProfilePicture{
+    width: 5em;height: 5em;
+}
+.PostContent_Text{
+    color: white;
+    padding-left: 2em;
+}
+.PostContent_Image{
+    max-width: 42.75em;
+    max-height: 16.5em;
+}
+.PostInteractions{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.RightSide_Contents-Container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    right: 0;
+    gap: 12em;
+}
+.LiveStream_AdBox{
+    color: white;
+    position: relative;
+}
+.LiveStreamView{
+    position: absolute;
+    width: 23.25em;
+    height: 14.9375em;
+    z-index: 1;
+}
+.LiveStream_Title{
+    position: absolute;
+    z-index: 2;
+}
+.SuggestedUsers-Container{
+    max-width: 28.125em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SuggestedUsers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap : 1em;
+}
+.SuggestedUsers-Container h1{
+    color: white;
+    font-size: 24px;
+}
+.SuggestedUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12.5em;
+    height: 13.75em;
+    background: rgba(27, 27, 27, 1);
+    color: white;
+    border-radius: 13.6125px;
+}
+.SuggestedUser_ProfilePicture{
+    width: 5em;height: 5em;
+}
+.GozatButton{
+    width: 100px;
+    background: #F0F7FF;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #7D29A0; 
+    padding: 1em;
+}
+
+@media screen and (max-width : 1470px) {
+    body{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 1100px) {
+    body{
+        font-size: 14px;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+}
+@media screen and (max-width : 850px) {
+    .MainpagePost-Container{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 600px) {
+    body{
+        font-size: 16px;
+    }
+    .Posts,.Post,.PostContent_Image{
+        width: 100%;
+    }
+    .MainpagePosts-Header{
+        width: 100%;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+        padding: 4em;
+        padding-left: 6em;
+        font-size: 16px;
+    }
+    .Posts{
+        gap: 5em;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+    .PageContent-Container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background: linear-gradient(108.17deg, #1D123D 0%, #121111 99.58%);
+}
+p,span,h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+.WebpageContent{
+    background: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+/*SIDEBAR*/
+.dropright{
+    width: 100%;
+    padding: 0 0 0 0;
+    padding-right:6em;
+    white-space: nowrap;
+}
+.dropdown-menu{
+    width: 100%;
+    height: auto;
+    border: none !important;
+    transform: none !important;
+    padding-bottom: 2em;
+    left: 99% !important;
+    top: -10em !important;
+    border: 1px solid transparent !important;
+    border-left: none !important;
+    border-radius: 0px 40px 40px 0px !important;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%) !important;
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+    box-shadow: 0px 0px 10.8918px rgba(0, 0, 0, 0.05) !important;
+}
+.dropdown-item{
+    margin-top: 2.5em;
+}
+.dropdown-item{
+    color: white;
+}
+#DashboardTab_Dropdown{
+    padding: 0 0 0 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 6.64615px;
+}
+.SideNavbar{
+    margin-top: -1.7em;
+    z-index: 1;
+    width: 15%;
+    height: max-content;
+    padding-bottom: 2em;
+    border: 0.5px solid transparent;
+    border-left: none;
+    border-radius: 0px 40px 40px 0px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 0px 10.8918px rgba(0, 0, 0, 0.05);
+    position: fixed;
+}
+.SideNavbarDummy{
+    width: 15%;
+    min-width: 54px;
+    height: max-content;
+    padding-bottom: 2em;
+}
+.CurrentSession_Account{
+    margin-top: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.CurrentSession_Account_Textbox{
+    display: flex;
+    flex-direction: column; 
+}
+.CurrentSession_Account_ProfilePicture{
+    width: 5em;height: 5em;
+}
+.CurrentSession_Account_Username{
+    margin: 0 0 0 0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.CurrentSession_ProfiliGoruntule{
+    margin: 0 0 0 0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 5px;
+    color: #FFFFFF; 
+}
+.SideNavbar-Links{
+    display: flex;
+    padding-left: 3em;
+    padding-top: 4em;
+    gap: 3.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.btn{
+    font-size: 1em !important;
+}
+.SideNavbar-Link_LinkName{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.0625em;
+line-height: 26px;
+color: #A0A0A0;
+}
+.PageContent-Container{
+    width: 100%;
+    position: relative;
+    height:auto;
+    display: flex;
+}
+
+@media screen and (max-width : 1470px) {
+    .SideNavbar{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 1190px) {
+    .SideNavbar-Links{
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width : 1100px) {
+    .SideNavbar{
+        font-size: 14px;
+    }
+    .SideNavbar-Link_LinkName{
+        display: none;
+    }
+    .CurrentSession_Account_Textbox{
+        display: none;
+    }
+    .SideNavbar{
+        width: 70px;
+    }
+    .SideNavbar-Links{
+        padding-top: 2em;
+        padding-left: 0.5em;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+}
+@media screen and (max-width : 850px) {
+    .MainpagePost-Container{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .SideNavbar{
+        font-size: 16px;
+    }
+    .SideNavbar-Link_LinkName,.CurrentSession_Account_Textbox{
+        display: inline-block;
+    }
+    .Posts,.Post,.PostContent_Image{
+        width: 100%;
+    }
+    .MainpagePosts-Header{
+        width: 100%;
+    }
+    .SideNavbar-Links{
+        padding-top: 2em;
+    }
+    .dropright{
+        width: auto;
+    }
+    .SideNavbar-Link:hover::after{
+        content: "Homepage";
+        background-color: white;
+        color: black;
+        position: absolute;
+        width: auto;
+        height: auto;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+        font-size: 16px;
+    }
+    .Posts{
+        gap: 5em;
+    }
+    .RightSide_Contents-Container{
+        display: none;
+    }
+    .PageContent-Container{
+        flex-direction: column;
+    }
+    .SideNavbar{
+        width: 100%;
+        position: static;
+        border-radius: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .dropdown-menu{
+        height: auto;
+        border: none !important;
+        transform: none !important;
+        padding-bottom: 2em;
+        left: 100% !important;
+    }
+    .dropright{
+        width: auto;
+        display: flex !important;
+        padding: 0 0 0 0;
+        white-space: nowrap;
+    }
+}
+
+
+/* DASHBOARD MENU */
+.DashboardMenu{
+    margin-top: -1.7em;
+    z-index: 1;
+    width: 15%;
+    height: max-content;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    top: 33%;
+    border: 0.5px solid transparent;
+    border-left: none;
+    border-radius: 0px 40px 40px 0px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 0px 10.8918px rgba(0, 0, 0, 0.05);
+    position: fixed;
+}
+.DashboardMenuDummy{
+    width: 14%;
+    height: auto;
+}
+.DashboardMenu > * {
+    width: 100%;
+}
+.DashboardHeader{
+    padding-left: 0.5em;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #A0A0A0;
+}
+.DashboardLinks{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    gap: 3em;
+    align-items: flex-start;
+    justify-content: center;
+}
+.DashboardLink{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.43px;
+    line-height: 26px;
+    color: #A0A0A0;
+}
+.DashboardLink:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* NAV */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap');
+ul,li,a,a:hover{
+    text-decoration: none;
+    list-style-type: none;
+}
+.Navi-Container{
+    z-index: 4;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+}
+.navbar{
+    background-color: white;
+    border:solid 1px black;
+    width: 95%;
+    height: 6em;
+    border-radius: 18px;
+}
+#navbarSupportedContent{
+    position: relative;
+}
+#searchnavbar{
+    margin-top: 0.11em;
+    width: 25em;
+    padding: 0.7em;
+    padding-left: 1em;
+    background: #F5F5F5;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+#NavbarSearchForm{
+    position: relative;
+}
+#searchIconNavbar{
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    transform: rotateY(180deg);
+    color: grey;
+    font-size: large;
+}
+.NavbarLinks{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin-top:0.7em;
+    margin-left: 2em;
+}
+.NavbarLink{
+    color: #7D29A0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-bottom: 0.9em;
+}
+.NavbarLink-Right-Collapsed{
+    display: none;
+    color: #7D29A0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-bottom: 0.9em;
+}
+.NavbarLink-Right-Collapsed:hover,.NavbarLink-Right-Collapsed:active{
+    border-bottom: solid 3px #7D29A0;
+    box-shadow: 0px 0px 40px rgba(253, 230, 63, 0.24);
+    text-decoration: none;
+    color: inherit;
+}
+#BrandLogoNavbar{
+    margin-left: 4.9em;
+}
+#MobileBrandLogo{
+    display: none;
+}
+.NavbarLink:hover,.NavbarLink:active{
+    border-bottom: solid 3px #7D29A0;
+    box-shadow: 0px 0px 40px rgba(253, 230, 63, 0.24);
+    text-decoration: none;
+    color: inherit;
+}
+.NavbarLinks-Right{
+    white-space: nowrap;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 1em;
+    margin-top: 0.75em;
+    gap: 2em;
+    margin-right: 3em;
+}
+#NavbarLink-Right2{
+    padding: 1em;
+    background: #7D29A0;
+    border-radius: 9.52128px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+#NavbarLink-Right1{
+    padding: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+@media screen and (max-width : 1500px) {
+    #searchnavbar{
+        width: 18em;
+    }
+    .NavbarLinks{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width : 1300px) {
+    #searchnavbar{
+        display: none;
+    }
+    #searchIconNavbar{
+        display: none;
+    }
+    .NavbarLinks{
+        margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width : 999.99px){
+    #navbarSupportedContent{
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.5) 65.62%,
+            rgba(141, 141, 141, 1) 100%
+          );
+          margin-top: 5em; 
+          padding: 1em;    
+       }
+}
+@media screen and (max-width : 1000px) {
+    #MobileBrandLogo{
+        display: block;
+        position: absolute;
+        right: 3em;
+    }
+    .navbar{
+        position: relative;
+    }
+    #BrandLogoNavbar{
+        display: none;
+    }
+    .NavbarLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start;
+    }
+    .NavbarLinks-Right{
+        display: none;
+    }
+    .NavbarLink-Right-Collapsed{
+        display: block;
+    }
+    .navbar-toggler{
+        position: absolute;
+    }
+}
+
+

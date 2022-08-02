@@ -1,0 +1,575 @@
+.WebpageContent{
+    padding-right: 1em;
+}
+.ProfileBio-Container{
+    width: 15%;
+    height: max-content;
+    background: linear-gradient(180deg, #181325 0%, rgba(0, 0, 0, 0) 100%);
+border-radius: 30px;
+box-shadow: 0px 20px 20.8918px rgba(0, 0, 0, 0.05) ;
+padding: 1em;
+}
+.ProfileBio_Username{
+    margin: 0 0 0 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 1.0125em;
+line-height: 19px;
+color: #FFFFFF;
+}
+.ProfileBio_UserTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  0.6075em;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.ProfileBio span{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 0.8125em;
+line-height: 15px;
+color: #FFFFFF;
+}
+.Biography{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.PageContent-Container{
+    gap: 2em;
+}
+.ProfileInteractions{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.EditProfile{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;    
+    gap: 0.5em;
+}
+
+
+
+.MainpagePost-Container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MainpagePosts-Header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 8.76433px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    width: 53.5625em;
+    height: 5em;
+}
+.MainpagePosts-Header h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875em;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.Posts{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.Post{
+    display: flex;
+    max-width: 53.125em;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    padding: 2em;
+    border: 1px solid transparent;
+    border-radius: 9.8px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.PostOwnerInfo{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.PostOwner_Username,.PostedAgo{
+    width: 100%;
+}
+.PostOwner_Username{
+    font-size: 1.25em;
+}
+.PostedAgo{
+    font-size: 1em;
+}
+.PostOwnerText{
+    display: flex;
+    flex-direction: column;
+}
+.PostOwner_ProfilePicture{
+    width: 5em;height: 5em;
+}
+
+#PostSettings{
+    color: #788292 !important;
+    outline: none;
+    font-size: 36px !important;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+#PostSettings-Container{
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: -1.2em;
+}
+
+
+.PostContent_Text{
+    color: white;
+    padding-left: 2em;
+}
+/* .PostContent_ImageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.PostContent_Image{
+    max-width: 42.75em;
+    max-height: 16.5em;
+}
+.PostInteractions{
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.PostInteractions >*{
+    width: 35px;
+    height: 24px;
+}
+.PostInteractionIcons_Container{
+    position: relative;
+}
+.PostInteractionIcons_Container span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6em;
+    line-height: 12px;
+    color: #788292;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+.Post_LikeCount{
+    right: 0;
+}
+.Post_CommentCount,.Post_ShareCount{
+    right: -1em;
+}
+.PostInteractions button{
+    padding: 0.1em;
+    background-color: transparent;
+    border: none;
+}
+.InactiveLikeIcon{
+    padding-bottom: 1.4px;
+}
+.LiveStream_AdBox{
+    color: white;
+    position: relative;
+}
+.LiveStreamView{
+    position: absolute;
+    width: 23.25em;
+    height: 14.9375em;
+    z-index: 1;
+}
+.LiveStream_Title{
+    position: absolute;
+    z-index: 2;
+}
+.SuggestedUsers-Container{
+    max-width: 28.125em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SuggestedUsers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap : 1em;
+}
+.SuggestedUsers-Container h1{
+    color: white;
+    font-size: 24px;
+}
+.SuggestedUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12.5em;
+    height: 13.75em;
+    background: rgba(27, 27, 27, 1);
+    color: white;
+    border-radius: 13.6125px;
+}
+.SuggestedUser_ProfilePicture{
+    width: 5em;height: 5em;
+}
+.GozatButton{
+    width: 100px;
+    background: #F0F7FF;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6875em;
+    line-height: 13px;
+    text-align: center;
+    color: #7D29A0; 
+    padding: 1em;
+}
+.RightSide_Contents-Container{
+    width: 20%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: 
+     linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 1)), 
+     linear-gradient(90.45deg, #0FEFFD 0%, #FF00F5 59.37%, rgba(17, 239, 253, 0.4) 77.6%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    padding-bottom: 2em;
+}
+.Content_Header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+}
+.Content_Header span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33125em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.Contents{
+    width: 100%;
+    height: auto;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.Content{
+    width: 18.75em;
+    height: 12.5em;
+    position: relative;
+    border-radius: 34px;
+    background: url(../media/EgitimBG.png);
+}
+.CourseOwner_Info{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+}
+.CourseOwner_Username{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9125em;
+    line-height: 13px;
+    color: #FFFFFF; 
+}
+.TotalTimeBadge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.839375em;
+    height: 1.105625em;
+    right: 1em;
+    top: 1.6em;
+    position: absolute;
+    width: max-content;
+    padding: 0.5em;
+    background: #FB6D3A;
+backdrop-filter: blur(10.3285px);
+border-radius: 21.9959px;
+}
+.CourseNameContainer{
+    width: 90%;
+    padding: 1em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    display: flex;
+    justify-content: center;
+    background: rgba(60, 17, 134, 0.3);
+    backdrop-filter: blur(30.2391px);
+    border-radius: 21.9959px;
+}
+.CourseOwner_CourseName{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 0.913125em;
+line-height: 17px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+.Content_Header2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2em;
+}
+.Content_Header2 span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33125em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.Groups{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2em;
+    gap: 1em;
+}
+.Group{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+.GroupPicture{
+    border-radius: 12px;
+}
+.GroupName{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.8125em;
+    line-height: 24px;
+}
+@media screen and (max-width : 1800px) {
+    .PageContent-Container{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 1400px) {
+    .PageContent-Container{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .PageContent-Container{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 1150px) {
+    .PageContent-Container{
+        flex-direction: column;
+        font-size: 16px;
+        padding-left: 5em;
+    }
+    .PageContent-Container >*{
+        width: 100%;
+    }
+    .Contents{
+        padding: 1em;
+    }
+    .Content{
+        width: 100%;
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 1100px) {
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-240px, 68px, 0px) !important;
+    }
+}
+@media screen and (max-width : 850px) {
+    .PageContent-Container{
+        padding: 0 0 0 0;
+        padding: 2em;
+    }
+    .MainpagePosts-Header{
+        width: 103%;
+    }
+    .WebpageContent{
+        padding: 0 0 8em 0;
+    }
+    .MainpagePost-Container{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width :650px){
+    .WebpageContent{
+        padding: 0 1em 10em 1em;
+    }
+    .MainpagePost-Container{
+        font-size: 12px;
+    }
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-280px, 68px, 0px) !important;
+        padding-bottom: 0.5em !important;
+    }
+}
+@media screen and (max-width : 600px) {
+    .Posts{
+        max-height: 700px;
+        overflow-y: scroll;
+    }
+    .PageContent-Container{
+        flex-direction: column;
+        font-size: 16px;
+        padding: 0 0 0 0;
+    }
+    .MainpagePost-Container{
+        width: 100%;
+        font-size: 16px;
+        padding: 0 0 0 0;
+    }
+    .MainpagePosts-Header{
+        width: 100%;
+        height: auto;
+    }
+    .ProfileBio-Container{
+        margin-right: 2em;
+    }
+}
+@media screen and (max-width :320px) {
+    #PostSettings-Container .dropdown-menu{
+        transform: translate3d(-240px, 68px, 0px) !important;
+    }
+}
+
+.postComments{
+    display: none;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 1.5em;
+    gap: 1.5em;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+.showCommentsSection{
+    display: flex !important;
+}
+.CommentsSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 1.5em;
+    max-height: 520px;
+    overflow-y: scroll;
+}
+.postComments p{
+    margin-bottom: 0;
+}
+.CreatePost_Btn button{
+    background: rgba(125, 41, 160, 0.5);
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+    width: 12em;
+    padding: 0.5em 1em 0.7em 1em;
+}
+.createComment{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.createComment_ProfilePicture{
+    display: flex;
+    width: 10%;
+}
+.postComment_btn{
+    padding: 0.5em;
+    white-space: nowrap;
+    border-radius: 12px;
+    background: rgba(125, 41, 160, 0.5);
+    box-shadow: 0px 4.9893px 12.4732px rgba(16, 156, 241, 0.24);
+    border-radius: 4.9893px;
+}
+#commentInput{
+    width: 80%;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: 0.5;
+    outline: none;
+}
+.postedComment_Actions{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    padding-right: 1em;
+    justify-content: flex-end;
+}
+.Liked{
+    color: #1877F2 !important;
+}
+/* Scrollbar Görünüm */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
