@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\rc;
+use App\Models\Course;
+use App\Models\CourseCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
 
 class CourseController extends Controller
 {
@@ -14,7 +17,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses = Course::all();
+        return view('courses.index', compact('courses'));
     }
 
     /**
@@ -24,7 +28,8 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        $categories = CourseCategory::all();
+        return view('courses.add', compact('categories'));
     }
 
     /**
@@ -35,7 +40,9 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Course::create($request->all());
+        Session::flash('alertSuccessMessage', 'Kurs Kaydı Başarılı!');
+        return redirect()->route('courses.index');
     }
 
     /**
@@ -55,9 +62,10 @@ class CourseController extends Controller
      * @param  \App\Models\rc  $rc
      * @return \Illuminate\Http\Response
      */
-    public function edit(rc $rc)
+    public function edit(Course $course)
     {
-        //
+        $categories = CourseCategory::all();
+        return view('courses.update', compact('categories', 'course'));
     }
 
     /**
@@ -67,9 +75,17 @@ class CourseController extends Controller
      * @param  \App\Models\rc  $rc
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, rc $rc)
+    public function update(Request $request, Course $course)
     {
-        //
+
+        $course->name = $request->input('name');
+        $course->category_id = $request->input('category_id');
+        $course->desc = $request->input('desc');
+        $course->price = $request->input('price');
+        $course->url = $request->input('url');
+        $course->save();
+        Session::flash('alertSuccessMessage', 'Kurs Güncelleme Başarılı!');
+        return redirect()->route('courses.index');
     }
 
     /**
@@ -78,8 +94,11 @@ class CourseController extends Controller
      * @param  \App\Models\rc  $rc
      * @return \Illuminate\Http\Response
      */
-    public function destroy(rc $rc)
+    public function destroy(Course $course)
     {
-        //
+        $course->delete();
+        Session::flash('alertSuccessMessage', 'Kurs Silme Başarılı!');
+
+        return redirect()->route('courses.index');
     }
 }

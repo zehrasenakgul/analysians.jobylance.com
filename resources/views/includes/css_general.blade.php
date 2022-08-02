@@ -2,6 +2,7 @@
 <link href="{{ asset('public/css/feather.css') }}" rel="stylesheet">
 <link href="{{ asset('public/css/bootstrap-icons.css') }}?v={{$settings->version}}" rel="stylesheet">
 <link href="{{ asset('public/css/icomoon.css') }}" rel="stylesheet">
+
 @auth
 <link href="{{ asset('public/js/fileuploader/font/font-fileuploader.css')}}" media="all" rel="stylesheet" type="text/css" />
 <link href="{{ asset('public/js/fileuploader/jquery.fileuploader.min.css')}}" media="all" rel="stylesheet" type="text/css" />

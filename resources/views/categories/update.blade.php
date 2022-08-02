@@ -25,9 +25,3 @@
         </div>
     </div>
 @endsection
-
-@push('customJs')
-@endpush
-
-@push('customCss')
-@endpush

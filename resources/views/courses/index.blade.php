@@ -7,7 +7,7 @@
                     {{ session()->get('alertSuccessMessage') }}
                 </div>
             @endif
-            <a href="categories/create"><button class="btn btn-light">Ekle</button></a>
+            <a href="courses/create"><button class="btn btn-light">Ekle</button></a>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-condensed mb-4 text-white">
                     <thead>
@@ -17,12 +17,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($categories as $item)
+                        @foreach ($courses as $item)
                             <tr>
                                 <td>{{ $item->name }}</td>
                                 <td class="text-center">
                                     <ul class="table-controls d-flex">
-                                        <li><a href="{{ url('categories/' . $item->id) }}" data-toggle="tooltip"
+                                        <li><a href="{{ url('courses/' . $item->id) }}" data-toggle="tooltip"
                                                 data-placement="top" title="" data-original-title="Edit"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -33,7 +33,7 @@
                                                 </svg></a></li>
                                         <li>
                                             <form
-                                                action="{{ route('categories.destroy', ['category' => $item->id]) }}"method="POST">
+                                                action="{{ route('courses.destroy', ['course' => $item->id]) }}"method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit"
