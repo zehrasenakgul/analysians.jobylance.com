@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\CourseCategoryController;
-use App\Http\Controllers\CourseController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 /*

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\rc;
+use App\Models\CourseCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
 
 class CourseCategoryController extends Controller
 {
@@ -14,7 +16,9 @@ class CourseCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = CourseCategory::all();
+
+        return view('categories.index', compact('categories'));
     }
 
     /**
@@ -24,7 +28,7 @@ class CourseCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.add');
     }
 
     /**
@@ -35,16 +39,19 @@ class CourseCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        CourseCategory::create($request->all());
+        Session::flash('alertSuccessMessage', 'Kategori Kaydı Başarılı!');
+        return redirect()->route('categories.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\rc  $rc
+     * @param  \App\Models\CourseCategory  $courseCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(rc $rc)
+    public function show(CourseCategory $courseCategory)
     {
         //
     }
@@ -52,34 +59,44 @@ class CourseCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\rc  $rc
+     * @param  \App\Models\CourseCategory  $courseCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(rc $rc)
+    public function edit($id)
     {
-        //
+        $courseCategory = CourseCategory::where("id", $id)->first();
+        return view('categories.update', compact('courseCategory'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\rc  $rc
+     * @param  \App\Models\CourseCategory  $courseCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, rc $rc)
+    public function update(Request $request, $id)
     {
-        //
+
+        CourseCategory::where("id", $id)->first()->update([
+            'name' => $request->input('name')
+        ]);
+
+        Session::flash('alertSuccessMessage', 'Kategori Güncelleme Başarılı!');
+
+        return redirect()->route('categories.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\rc  $rc
+     * @param  \App\Models\CourseCategory  $courseCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(rc $rc)
+    public function destroy($id)
     {
-        //
+        CourseCategory::where("id", $id)->first()->delete();
+        Session::flash('alertSuccessMessage', 'Kategori Silme Başarılı!');
+        return redirect()->route('categories.index');
     }
 }
