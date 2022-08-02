@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CourseController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 /*
@@ -19,6 +20,16 @@ use Illuminate\Support\Facades\Session;
  |-----------------------------------
  */
 
+Route::controller(CourseController::class)->group(function () {
+    Route::group(['prefix' => 'courses', "as" => "courses."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{course}', 'edit')->name('edit');
+        Route::put('/{course}', 'update')->name('update');
+        Route::delete('/{course}', 'destroy')->name('destroy');
+    });
+});
 Route::get('/socketio', 'HomeController@socketio')->name('socketio');
 
 
