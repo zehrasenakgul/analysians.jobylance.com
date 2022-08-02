@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CourseCategoryRequest;
 use App\Models\CourseCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-
 
 class CourseCategoryController extends Controller
 {
@@ -37,7 +37,7 @@ class CourseCategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CourseCategoryRequest $request)
     {
 
         CourseCategory::create($request->all());
@@ -75,7 +75,7 @@ class CourseCategoryController extends Controller
      * @param  \App\Models\CourseCategory  $courseCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CourseCategoryRequest $request, $id)
     {
 
         CourseCategory::where("id", $id)->first()->update([
