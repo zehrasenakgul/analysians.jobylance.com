@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CourseCategoryController;
 use App\Http\Controllers\CourseController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
@@ -30,6 +31,18 @@ Route::controller(CourseController::class)->group(function () {
         Route::delete('/{course}', 'destroy')->name('destroy');
     });
 });
+
+Route::controller(CourseCategoryController::class)->group(function () {
+    Route::group(['prefix' => 'categories', "as" => "categories."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{category}', 'edit')->name('edit');
+        Route::put('/{category}', 'update')->name('update');
+        Route::delete('/{category}', 'destroy')->name('destroy');
+    });
+});
+
 Route::get('/socketio', 'HomeController@socketio')->name('socketio');
 
 
