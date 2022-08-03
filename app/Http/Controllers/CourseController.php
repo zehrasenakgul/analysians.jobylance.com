@@ -7,7 +7,9 @@ use App\Models\CourseCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Enums\noImagePath;
+use App\Http\Requests\CourseRequest;
 use Illuminate\Support\Facades\Storage;
+
 
 
 class CourseController extends Controller
@@ -41,7 +43,7 @@ class CourseController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CourseRequest $request)
     {
         $course = new Course();
         $filePath = noImagePath::PATH;
@@ -90,7 +92,7 @@ class CourseController extends Controller
      * @param  \App\Models\rc  $rc
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(CourseRequest $request, Course $course)
     {
 
         $filePath = $course->upload;
