@@ -1,6 +1,9 @@
 @extends('layouts.app')
-@section('content')
+@section('title')
+    Kurse Ekle
+@endsection
 
+@section('content')
     <div class="layout-px-spacing">
 
         <div class=" layout-top-spacing">
@@ -51,17 +54,13 @@
                         <span class="text-danger text-left">{{ $errors->first('url') }}</span>
                     @endif
                 </div>
-                {{-- <div class="form-group custom-file-container mb-4" data-upload-id="myFirstImage">
-                    <label class=" text-white control-label">Dosya Seçimi </label><br>
-                    <label class=" text-white custom-file-container__custom-file">
-                        <input type="file" name="upload" class="custom-file-container__custom-file__custom-file-input"
-                            accept="image/*">
-                        @if ($errors->has('upload'))
-                            <span class="text-danger text-left">{{ $errors->first('upload') }}</span>
-                        @endif
-                        <span class="custom-file-container__custom-file__custom-file-control"></span>
-                    </label>
-                </div> --}}
+                <div class="form-group mb-4">
+                    <label class=" text-white control-label">Dosya:</label>
+                    <input type="file" name="upload" class="form-control">
+                    @if ($errors->has('upload'))
+                        <span class="text-danger text-left">{{ $errors->first('upload') }}</span>
+                    @endif
+                </div>
                 <input type="submit" name="submit" value="Ekle" class="btn btn-primary">
             </form>
         </div>

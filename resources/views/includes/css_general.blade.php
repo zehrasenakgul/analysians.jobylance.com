@@ -444,7 +444,6 @@ a.text-primary.btnBookmark:hover, a.text-primary.btnBookmark:focus {
   border-bottom: 3px solid {{$settings->color_default}}!important;
 }
 .button-avatar-upload {left: 0;}
-input[type='file'] {overflow: hidden;}
 .badge-free { top: 10px; right: 10px; background: rgb(0 0 0 / 65%); color: #fff; font-size: 12px;}
 
 .btn-facebook, .btn-twitter, .btn-google {position: relative;}

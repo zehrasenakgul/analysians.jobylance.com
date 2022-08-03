@@ -55,17 +55,16 @@
                         <span class="text-danger text-left">{{ $errors->first('url') }}</span>
                     @endif
                 </div>
-                {{-- <div class="form-group custom-file-container mb-4" data-upload-id="myFirstImage">
-                    <label class=" text-white control-label">Dosya Seçimi </label><br>
-                    <label class=" text-white custom-file-container__custom-file">
-                        <input type="file" name="upload" class="custom-file-container__custom-file__custom-file-input"
-                            accept="image/*">
-                        @if ($errors->has('upload'))
-                            <span class="text-danger text-left">{{ $errors->first('upload') }}</span>
-                        @endif
-                        <span class="custom-file-container__custom-file__custom-file-control"></span>
-                    </label>
-                </div> --}}
+                <div class="form-group mb-4">
+                    <label class=" text-white control-label">Dosya:</label>
+                    <div class="card component-card_2 mb-3" style="width:150px">
+                        <img src="{{ asset('public/' . $course->upload) }}" class="card-img-top" alt="widget-card-2">
+                    </div>
+                    <input type="file" name="upload" class="form-control">
+                    @if ($errors->has('upload'))
+                        <span class="text-danger text-left">{{ $errors->first('upload') }}</span>
+                    @endif
+                </div>
                 <input type="submit" name="submit" value="Ekle" class="btn btn-primary">
 
             </form>
