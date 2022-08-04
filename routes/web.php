@@ -53,6 +53,17 @@ Route::controller(SectionController::class)->group(function () {
     });
 });
 
+Route::controller(PartController::class)->group(function () {
+    Route::group(['prefix' => 'parts', "as" => "parts."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{part}', 'edit')->name('edit');
+        Route::put('/{part}', 'update')->name('update');
+        Route::delete('/{part}', 'destroy')->name('destroy');
+    });
+});
+
 Route::get('/socketio', 'HomeController@socketio')->name('socketio');
 
 

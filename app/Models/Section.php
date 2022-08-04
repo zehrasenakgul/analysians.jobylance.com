@@ -13,4 +13,8 @@ class Section extends Model
     {
         return $this->hasOne(Course::class, 'id', 'course_id');
     }
+    public function parts()
+    {
+        return $this->hasMany(Part::class, 'section_id', 'id');
+    }
 }

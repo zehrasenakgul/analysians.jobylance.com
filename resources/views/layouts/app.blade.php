@@ -26,6 +26,12 @@
 
 
 @yield('css')
+<style>
+    .d-flex
+    {
+        align-items: baseline !important;
+    }
+</style>
 
 @if ($settings->google_analytics != '')
     {!! $settings->google_analytics !!}
