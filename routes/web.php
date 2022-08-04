@@ -41,6 +41,18 @@ Route::controller(CourseCategoryController::class)->group(function () {
     });
 });
 
+
+Route::controller(SectionController::class)->group(function () {
+    Route::group(['prefix' => 'sections', "as" => "sections."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{section}', 'edit')->name('edit');
+        Route::put('/{section}', 'update')->name('update');
+        Route::delete('/{section}', 'destroy')->name('destroy');
+    });
+});
+
 Route::get('/socketio', 'HomeController@socketio')->name('socketio');
 
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    Kurse Ekle
+    Kurs Ekle
 @endsection
 
 @section('content')

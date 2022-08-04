@@ -13,4 +13,8 @@ class Course extends Model
     {
         return $this->hasOne(CourseCategory::class, 'id', 'category_id');
     }
+    public function sections()
+    {
+        return $this->hasMany(Section::class, 'course_id', 'id');
+    }
 }

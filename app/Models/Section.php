@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Section extends Model
 {
     use HasFactory;
+    protected $fillable = ["course_id", "name"];
+    public function course()
+    {
+        return $this->hasOne(Course::class, 'id', 'course_id');
+    }
 }

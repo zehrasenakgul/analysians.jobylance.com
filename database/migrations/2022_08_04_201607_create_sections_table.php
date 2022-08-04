@@ -17,7 +17,6 @@ class CreateSectionsTable extends Migration
             $table->id();
             $table->bigInteger('course_id')->unsigned();
             $table->string("name");
-            $table->string("upload");
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
             $table->index('course_id');
             $table->timestamps();
