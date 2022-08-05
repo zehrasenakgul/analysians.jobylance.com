@@ -27,8 +27,7 @@
 
 @yield('css')
 <style>
-    .d-flex
-    {
+    .d-flex {
         align-items: baseline !important;
     }
 </style>
