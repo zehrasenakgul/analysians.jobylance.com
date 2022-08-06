@@ -118,60 +118,51 @@
                 </div>
             </nav>
         </div>
-        <div class="SideNavbar">
-            <div class="CurrentSession_Account">
-                <a href="./ProfiliGoruntule.html">
-                    <img src="./assets/media/PostOwnerPP.png" alt=""
-                        class="CurrentSession_Account_ProfilePicture">
-                </a>
-                <div class="CurrentSession_Account_Textbox">
-                    <h5 class="CurrentSession_Account_Username">Kripto Ege</h5>
-                    <a href="./ProfiliGoruntule.html"><span class="CurrentSession_ProfiliGoruntule">Profili
-                            Görüntüle</span></a>
+        <div class="SideNavbar-Links">
+            <a href="{{ url('/') }}"class="SideNavbar-Link">
+                <div class="SideNavbar-Link scrollhere">
+                    <img src="{{ asset('public/talha/assets/media/SideNavbar/Homepage.png') }}" alt=""
+                        class="SideNavbar-Link_Icon">
+                    <span class="SideNavbar-Link_LinkName">Anasayfa</span>
                 </div>
-            </div>
-            <div class="SideNavbar-Links">
-                <a href="./Mainpage.html" class="SideNavbar-Link">
-                    <div class="SideNavbar-Link scrollhere">
-                        <img src="./assets/media/SideNavbar/Homepage.png" alt=""
-                            class="SideNavbar-Link_Icon">
-                        <span class="SideNavbar-Link_LinkName">Anasayfa</span>
-                    </div>
-                </a>
-                <a href="./Gruplar.html" class="SideNavbar-Link">
+            </a>
+            <a href="{{ url('/gruplar') }}" class="SideNavbar-Link">
+                <div class="SideNavbar-Link">
+                    <img src="{{ asset('public/talha/assets/media/SideNavbar/Groups.png') }}" alt=""
+                        class="SideNavbar-Link_Icon">
+                    <span class="SideNavbar-Link_LinkName">Gruplar</span>
+                </div>
+            </a>
+            <a href="{{ url('/creators') }}" class="SideNavbar-Link">
+                <div class="SideNavbar-Link">
+                    <img src="{{ asset('public/talha/assets/media/SideNavbar/Analysianlar.png') }}" alt=""
+                        class="SideNavbar-Link_Icon">
+                    <span class="SideNavbar-Link_LinkName">Analysian'lar</span>
+                </div>
+            </a>
+            @if (auth()->user()->verified_id == 'yes')
+                <a href="/dashboard" class="SideNavbar-Link">
                     <div class="SideNavbar-Link">
-                        <img src="./assets/media/SideNavbar/Groups.png" alt="" class="SideNavbar-Link_Icon">
-                        <span class="SideNavbar-Link_LinkName">Gruplar</span>
-                    </div>
-                </a>
-                <a href="./Analysianlar.html" class="SideNavbar-Link">
-                    <div class="SideNavbar-Link">
-                        <img src="./assets/media/SideNavbar/Analysianlar.png" alt=""
-                            class="SideNavbar-Link_Icon">
-                        <span class="SideNavbar-Link_LinkName" style="color: #9531C0;">Analysianlar</span>
-                    </div>
-                </a>
-                <a href="./HesapBilgilerim.html" class="SideNavbar-Link">
-                    <div class="SideNavbar-Link">
-                        <img src="./assets/media/SideNavbar/Dashboard.png" alt=""
+                        <img src="{{ asset('public/talha/assets/media/SideNavbar/Dashboard.png') }}" alt=""
                             class="SideNavbar-Link_Icon">
                         <span class="SideNavbar-Link_LinkName">Dashboard</span>
                     </div>
                 </a>
-                <a href="./Egitimler.html" class="SideNavbar-Link">
-                    <div class="SideNavbar-Link">
-                        <img src="./assets/media/SideNavbar/Egitimler.png" alt=""
-                            class="SideNavbar-Link_Icon">
-                        <span class="SideNavbar-Link_LinkName">Egitimler</span>
-                    </div>
-                </a>
-                <a href="./Destek.html" class="SideNavbar-Link">
-                    <div class="SideNavbar-Link">
-                        <img src="./assets/media/SideNavbar/Destek.png" alt="" class="SideNavbar-Link_Icon">
-                        <span class="SideNavbar-Link_LinkName">Destek</span>
-                    </div>
-                </a>
-            </div>
+            @endif
+            <a href="./Egitimler.html" class="SideNavbar-Link">
+                <div class="SideNavbar-Link">
+                    <img src="{{ asset('public/talha/assets/media/SideNavbar/Egitimler.png') }}" alt=""
+                        class="SideNavbar-Link_Icon">
+                    <span class="SideNavbar-Link_LinkName">Egitimler</span>
+                </div>
+            </a>
+            <a href="./Destek.html" class="SideNavbar-Link">
+                <div class="SideNavbar-Link">
+                    <img src="{{ asset('public/talha/assets/media/SideNavbar/Destek.png') }}" alt=""
+                        class="SideNavbar-Link_Icon">
+                    <span class="SideNavbar-Link_LinkName">Destek</span>
+                </div>
+            </a>
         </div>
         <!---->
         <div class="WebpageContent">
