@@ -1,0 +1,673 @@
+body {
+    background: linear-gradient(108.17deg, #1d123d 0%, #121111 99.58%);
+}
+.photo_upload_component {
+    display: flex;
+    height: 35px;
+}
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.WebpageContent {
+    background: none;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+}
+/*SIDEBAR*/
+.DashboardTab_Dropdown:focus {
+    border: none;
+    appearance: none;
+    outline: none;
+}
+#DashboardTab_Dropdown {
+    padding: 0 0 0 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 6.64615px;
+}
+.SideNavbar {
+    margin-top: -1.7em;
+    z-index: 1;
+    width: 15%;
+    height: max-content;
+    padding-bottom: 2em;
+    border: 0.5px solid transparent;
+    border-left: none;
+    border-radius: 0px 40px 40px 0px;
+    background: linear-gradient(
+            to right,
+            rgba(27, 27, 27, 1),
+            rgba(27, 27, 27, 1)
+        ),
+        linear-gradient(
+            90.45deg,
+            #0feffd 0%,
+            #ff00f5 59.37%,
+            rgba(17, 239, 253, 0.4) 77.6%
+        );
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 0px 10.8918px rgba(0, 0, 0, 0.05);
+    position: fixed;
+}
+.SideNavbarDummy {
+    width: 15%;
+    min-width: 54px;
+    height: max-content;
+    padding-bottom: 2em;
+}
+.CurrentSession_Account {
+    margin-top: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.CurrentSession_Account_Textbox {
+    display: flex;
+    flex-direction: column;
+}
+.CurrentSession_Account_ProfilePicture {
+    width: 5em;
+    height: 5em;
+}
+.CurrentSession_Account_Username {
+    margin: 0 0 0 0;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 36px;
+    color: #ffffff;
+}
+.CurrentSession_ProfiliGoruntule {
+    margin: 0 0 0 0;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 5px;
+    color: #ffffff;
+}
+.SideNavbar-Links {
+    display: flex;
+    padding-left: 3em;
+    padding-top: 4em;
+    gap: 3.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.btn {
+    font-size: 1em !important;
+}
+.SideNavbar-Link_LinkName {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0625em;
+    line-height: 26px;
+    color: #a0a0a0;
+}
+.PageContent-Container {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+}
+@media screen and (max-height: 900px) {
+    body {
+        font-size: 12px;
+    }
+    .SideNavbar {
+        font-size: 12px !important;
+        height: 42.5em !important;
+    }
+    .SideNavbar-Links {
+        padding: 1em !important;
+        gap: 1.7em !important;
+    }
+}
+@media screen and (max-height: 900px) and (max-width: 1100px) {
+    .SideNavbar {
+        font-size: 14px !important;
+        height: 35em !important;
+    }
+    .SideNavbar-Links {
+        padding: 0.5em !important;
+        gap: 1em !important;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .SideNavbar {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .SideNavbar-Links {
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-height: 900px) {
+    body {
+        font-size: 12px;
+    }
+    .SideNavbar {
+        height: 42.5em !important;
+    }
+    .SideNavbar-Links {
+        padding: 1em !important;
+        gap: 1.7em !important;
+    }
+}
+@media screen and (max-height: 900px) and (max-width: 1100px) {
+    .SideNavbar {
+        height: 35em !important;
+    }
+    .SideNavbar-Links {
+        padding: 0.5em !important;
+        gap: 1em !important;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .SideNavbar {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .SideNavbar-Links {
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .SideNavbar {
+        font-size: 14px;
+    }
+    .SideNavbar-Link_LinkName {
+        display: none;
+    }
+    .CurrentSession_Account_Textbox {
+        display: none;
+    }
+    .SideNavbar {
+        width: 70px;
+    }
+    .SideNavbar-Links {
+        padding-top: 2em;
+        padding-left: 0.5em;
+    }
+    .MainpagePost-Container {
+        width: 100%;
+    }
+    .RightSide_Contents-Container {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    .MainpagePost-Container {
+        font-size: 10px;
+    }
+    .WebpageContent {
+        padding-bottom: 200px;
+    }
+    .SideNavbarDummy {
+        display: none;
+    }
+    .SideNavbar {
+        width: 100%;
+        height: unset !important;
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        padding: 1em;
+        border-radius: 0;
+        gap: 3em;
+    }
+    .SideNavbar-Links {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    .CurrentSession_Account {
+        margin-top: -0.4em;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 950px) {
+    .SideNavbar {
+        width: 100%;
+        height: unset !important;
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        padding: 1em;
+        border-radius: 0;
+        gap: 3em;
+    }
+    .SideNavbar {
+        justify-content: flex-start;
+        height: unset !important;
+        padding: 1em;
+        overflow-x: scroll;
+    }
+    .SideNavbar-Links {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        gap: 5em !important;
+    }
+    .CurrentSession_Account {
+        margin-top: -0.4em;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .SideNavbar {
+        justify-content: flex-start;
+        height: unset !important;
+        padding: 1em;
+        gap: 1.3em !important;
+        overflow-x: scroll;
+    }
+    .SideNavbar-Links {
+        gap: 2em !important;
+    }
+    .Posts,
+    .Post,
+    .PostContent_Image {
+        width: 100%;
+    }
+    .MainpagePosts-Header {
+        width: 100%;
+    }
+    .dropright {
+        width: auto;
+    }
+    .MainpagePost-Container {
+        width: 100%;
+        font-size: 16px;
+    }
+    .Posts {
+        gap: 5em;
+    }
+    .RightSide_Contents-Container {
+        display: none;
+    }
+    .PageContent-Container {
+        flex-direction: column;
+    }
+    .dropdown-menu {
+        height: auto;
+        border: none !important;
+        transform: none !important;
+        padding-bottom: 2em;
+        left: 100% !important;
+    }
+    .dropright {
+        width: auto;
+        display: flex !important;
+        padding: 0 0 0 0;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .SideNavbar {
+        justify-content: flex-start;
+        height: unset !important;
+        padding: 0.2em;
+        gap: 1.3em;
+        overflow-x: scroll;
+    }
+    .SideNavbar-Links {
+        gap: 2em !important;
+    }
+}
+
+/* NAV */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&family=Quicksand:wght@500&family=Source+Sans+Pro&display=swap");
+ul,
+li,
+a,
+a:hover {
+    text-decoration: none;
+    list-style-type: none;
+}
+.Navi-Container {
+    z-index: 4;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+}
+.navbar {
+    background-color: white;
+    border: solid 1px black;
+    width: 95%;
+    height: 6em;
+    border-radius: 18px;
+    position: relative;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+        gap: 1em;
+        margin-left: 3em;
+    }
+}
+.LeftLinks {
+    color: transparent !important;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-top: 1em;
+    user-select: none;
+}
+.RightLinks {
+    position: absolute;
+    right: 6em;
+}
+.RightLink {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    color: black;
+}
+#RightLink2 {
+    padding: 0.5em 1em 0.5em 1em;
+    background: #7d29a0;
+    border-radius: 9.52128px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.BrandLogoWeb {
+    margin-left: 18em;
+    width: 280px;
+}
+.BrandLogoWeb img {
+    width: 280px;
+}
+.searchbarform {
+    position: relative;
+    width: 20%;
+}
+.searchbarform input {
+    padding: 0.2em 0 0.2em 1em;
+    width: 100% !important;
+    background: #f5f5f5;
+    border-radius: 12px;
+    outline: hidden;
+    border: hidden;
+}
+.searchbarform input:focus,
+.searchbarform input:active {
+    outline: hidden;
+    border: hidden;
+}
+.searchbarform button {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.05em;
+    color: grey;
+}
+.MobileBrandLogo {
+    display: none;
+}
+.NavbarProfile {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    cursor: pointer;
+}
+.CurrentSession_Username {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 21px;
+    color: #000000;
+}
+#notificationbell {
+    width: 30px;
+}
+@media screen and (max-height: 900px) {
+    .BrandLogoWeb {
+        width: 200px;
+        margin-left: 17em !important;
+    }
+    .BrandLogoWeb img {
+        width: 220px !important;
+    }
+    #notificationbell {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .BrandLogoWeb img {
+        width: 200px;
+    }
+    .BrandLogoWeb {
+        margin-left: 12em;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+        gap: 1em;
+        margin-left: 1em;
+    }
+    .BrandLogoWeb {
+        margin-left: 8em;
+    }
+    .RightLinks {
+        right: 1em;
+    }
+}
+@media screen and (max-width: 992px) {
+    .searchbarform {
+        display: none;
+    }
+    #navbarTogglerDemo03 {
+        background-color: white;
+        margin-top: 1.3em;
+        z-index: 99;
+        padding: 2em;
+    }
+    .BrandLogoWeb {
+        display: none;
+    }
+    .RightLinks {
+        position: unset;
+    }
+    .MobileBrandLogo {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0.65em;
+    }
+    .MobileBrandLogo img {
+        width: 180px;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 820px) {
+    .MobileBrandLogo {
+        bottom: 0em;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 1080px) {
+    .Navi-Container {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 575px) and (max-height: 820px) {
+    .MobileBrandLogo {
+        bottom: 0.1em !important;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .Navi-Container {
+        padding: 0.5em;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 992px) and (max-height: 820px) {
+    .MobileBrandLogo {
+        bottom: 0.1em !important;
+    }
+}
+@media screen and (max-width: 580px) and (min-height: 820px) {
+    .Navi-Container {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 580px) {
+    .Navi-Container {
+        font-size: 12px;
+    }
+    .MobileBrandLogo {
+        bottom: 0.7em;
+        right: 9em;
+    }
+    .MobileBrandLogo {
+        width: 100px;
+    }
+}
+.CloseCross {
+    position: absolute;
+    right: 0;
+    top: -0.3em;
+    transform: rotate(-90deg);
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+.CurrentSession_HesapBilgilerim {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #232323;
+    border-radius: 9.43463px;
+    right: -5em;
+    top: 150%;
+    z-index: 99999;
+    padding: 2em;
+    gap: 2em;
+    cursor: default;
+}
+.showhesapbilgilerim {
+    display: flex !important;
+}
+.CurrentSession_HesapBilgilerim .Header {
+    position: relative;
+}
+.CurrentSession_HesapBilgilerim_ProfilePicture-Container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.InputRow {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+.LabelledInput label {
+    color: white;
+}
+.LabelledInput input {
+    background: #1b1b1b;
+    border-radius: 9.43463px;
+    border: none;
+    color: white;
+    padding: 1em;
+}
+.InputRow button {
+    width: 80%;
+    padding: 1em;
+    background: #7d29a0;
+    border-radius: 9.43463px;
+}
+.UploadImage {
+    width: 100px;
+    height: 100px;
+}
+#PhotoDropdownMenu {
+    gap: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    left: 4em !important;
+    top: 4em !important;
+    transform: none !important;
+    background-color: #1b1b1b;
+}
+#PhotoDropdownMenu > * {
+    color: white;
+}
+#PhotoDropdownMenu > *:hover {
+    color: black;
+}
+
+@media screen and (max-width: 1250px) {
+    .CurrentSession_HesapBilgilerim {
+        right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .CurrentSession_HesapBilgilerim {
+        width: 100%;
+    }
+    .InputRow {
+        gap: 1em;
+    }
+    .LabelledInput input {
+        width: 150px;
+    }
+}
+
+html {
+    scrollbar-color: rgba(126, 127, 131, 0.5) rgba(126, 127, 131, 0.1) !important;
+    scrollbar-width: normal !important;
+}
+.CurrentSession_Username.NavbarProfileMenu {
+    user-select: none;
+}

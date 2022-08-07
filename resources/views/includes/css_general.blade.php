@@ -2,6 +2,7 @@
 <link href="{{ asset('public/css/feather.css') }}" rel="stylesheet">
 <link href="{{ asset('public/css/bootstrap-icons.css') }}?v={{$settings->version}}" rel="stylesheet">
 <link href="{{ asset('public/css/icomoon.css') }}" rel="stylesheet">
+
 @auth
 <link href="{{ asset('public/js/fileuploader/font/font-fileuploader.css')}}" media="all" rel="stylesheet" type="text/css" />
 <link href="{{ asset('public/js/fileuploader/jquery.fileuploader.min.css')}}" media="all" rel="stylesheet" type="text/css" />
@@ -443,7 +444,6 @@ a.text-primary.btnBookmark:hover, a.text-primary.btnBookmark:focus {
   border-bottom: 3px solid {{$settings->color_default}}!important;
 }
 .button-avatar-upload {left: 0;}
-input[type='file'] {overflow: hidden;}
 .badge-free { top: 10px; right: 10px; background: rgb(0 0 0 / 65%); color: #fff; font-size: 12px;}
 
 .btn-facebook, .btn-twitter, .btn-google {position: relative;}

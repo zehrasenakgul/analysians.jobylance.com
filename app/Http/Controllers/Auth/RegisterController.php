@@ -59,12 +59,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
 
-        $data['_captcha'] = $this->settings->captcha;
+        // $data['_captcha'] = $this->settings->captcha;
 
         $messages = array(
             "letters"    => trans('validation.letters'),
-            'g-recaptcha-response.required_if' => trans('admin.captcha_error_required'),
-            'g-recaptcha-response.captcha' => trans('admin.captcha_error'),
+            // 'g-recaptcha-response.required_if' => trans('admin.captcha_error_required'),
+            // 'g-recaptcha-response.captcha' => trans('admin.captcha_error'),
         );
 
         Validator::extend('ascii_only', function ($attribute, $value, $parameters) {
@@ -81,7 +81,7 @@ class RegisterController extends Controller
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6',
             'agree_gdpr' => 'required',
-            'g-recaptcha-response' => 'required_if:_captcha,==,on|captcha'
+            // 'g-recaptcha-response' => 'required_if:_captcha,==,on|captcha'
         ], $messages);
     }
 

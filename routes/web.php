@@ -19,6 +19,51 @@ use Illuminate\Support\Facades\Session;
  |-----------------------------------
  */
 
+Route::controller(CourseController::class)->group(function () {
+    Route::group(['prefix' => 'courses', "as" => "courses."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{course}', 'edit')->name('edit');
+        Route::put('/{course}', 'update')->name('update');
+        Route::delete('/{course}', 'destroy')->name('destroy');
+    });
+});
+
+Route::controller(CourseCategoryController::class)->group(function () {
+    Route::group(['prefix' => 'categories', "as" => "categories."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{category}', 'edit')->name('edit');
+        Route::put('/{category}', 'update')->name('update');
+        Route::delete('/{category}', 'destroy')->name('destroy');
+    });
+});
+
+
+Route::controller(SectionController::class)->group(function () {
+    Route::group(['prefix' => 'sections', "as" => "sections."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{section}', 'edit')->name('edit');
+        Route::put('/{section}', 'update')->name('update');
+        Route::delete('/{section}', 'destroy')->name('destroy');
+    });
+});
+
+Route::controller(PartController::class)->group(function () {
+    Route::group(['prefix' => 'parts', "as" => "parts."], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{part}', 'edit')->name('edit');
+        Route::put('/{part}', 'update')->name('update');
+        Route::delete('/{part}', 'destroy')->name('destroy');
+    });
+});
+
 Route::get('/socketio', 'HomeController@socketio')->name('socketio');
 
 
